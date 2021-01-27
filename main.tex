@@ -1,9 +1,51 @@
-\documentclass{article}
+\documentclass{nitroma-article}
+\usepackage[british]{babel}
 
-\usepackage[margin=20mm]{geometry}
+% page layout
+\usepackage{pdflscape}  % landscape pages
+\usepackage{afterpage}  % full-page figures at the next opportunity
+\usepackage{pdfpages}   % include other PDF docs
 
-\title{fydp-interim-report}
-\author{Team 8}
+% typography
+\usepackage{csquotes}   % clever quote marks
+    \MakeOuterQuote{"}
+\usepackage[detect-all]{siunitx} % numbers and units
+    \DeclareSIUnit\year{yr}
+    \sisetup{text-celsius = °C}
+\usepackage{enumitem}   % control list spacing
+    \setlist{noitemsep}
+% \usepackage{epigraph}
+
+% formulae
+\usepackage{amsmath}
+\usepackage{chemmacros} % Swiss-army knife for chemistry
+
+% graphics
+\usepackage{graphicx}
+\usepackage[font={small,singlespacing},labelfont={bf}]{caption}
+\usepackage{subcaption}
+\usepackage{wrapfig}
+\usepackage{float}
+\usepackage{svg}
+
+% tables
+\usepackage{tabularx}
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage{multicol}
+\usepackage{longtable}
+\usepackage{colortbl}
+\newcommand{\tabsup}[1]{\textsuperscript{\textit{#1}}}
+
+% referencing
+\usepackage[hidelinks]{hyperref} % clickable links
+    \newcommand{\email}[1]{\href{mailto:#1}{\texttt{#1}}}
+\usepackage{cleveref}   % clever cross-referencing
+\usepackage[title,titletoc]{appendix}
+\usepackage[style=ieee]{biblatex} % references
+
+\title{Interim Design Report: Continuous Nitration of Substituted Aromatics}
+\author{Team 8: Marie~Jones, Mathusan~Kandiah, Zong~Lee, Yuxin~Liu, Mustafa~Nasar, Helen~Ogbobi, Wei~Ooi, Andreas~Richardson, Stephen~Tan, Sathurthini~Thurairatnam, Mingchuan~Zheng}
 \date{8 February 2021}
 
 \begin{document}
@@ -16,6 +58,8 @@
 \input{sections/3-process.tex}
 \input{sections/4-economics.tex}
 \input{sections/5-ehs.tex}
+
+\printbibliography
 
 \appendix
 \input{appendices/A-drawings.tex}

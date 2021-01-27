@@ -27,11 +27,12 @@
 \titleformat{\subsubsection}{\color{color1}\bfseries}{\thesubsubsection}{1em}{}
 
 %%% TITLEPAGE
+\RequirePackage{svg}
 \makeatletter
 \renewcommand{\maketitle}{
     \thispagestyle{empty}
     \hfill
-    \includegraphics[width=0.7\linewidth]{figures/logo}
+    \includegraphics[width=0.7\linewidth]{brand/logo}
     \vfill
     \begin{minipage}{0.65\textwidth}
         \raggedright

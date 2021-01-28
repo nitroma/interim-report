@@ -18,13 +18,14 @@
     \setmainfont{Fira Sans}
     \setmonofont{inconsolata}
 \RequirePackage[usefilenames]{firamath-otf}
+\RequirePackage{raleway}
 
 %%% SECTION TITLE FORMAT
 \RequirePackage{titlesec}
-% \titleformat{\chapter}{\LARGE\bfseries\scshape\color{color1}}{\thechapter}{1em}{}[\titlerule]
-\titleformat{\section}{\color{color1}\Large\bfseries}{\thesection}{1em}{}[\titlerule]
-\titleformat{\subsection}{\color{color1}\large\bfseries}{\thesubsection}{1em}{}
-\titleformat{\subsubsection}{\color{color1}\bfseries}{\thesubsubsection}{1em}{}
+% \titleformat{\chapter}{\LARGE\bfseries\scshape\color{color1}}{\thechapter}{1ex}{}[\titlerule]
+\titleformat{\section}{\color{color1}\Large\bfseries\ralewayextra}{\thesection}{1ex}{}[\titlerule]
+\titleformat{\subsection}{\color{color1}\large\bfseries\ralewayextra}{\thesubsection}{1ex}{}
+\titleformat{\subsubsection}{\color{color1}\bfseries\ralewayextra}{\thesubsubsection}{1ex}{}
 
 %%% TITLEPAGE
 \RequirePackage{svg}
@@ -35,7 +36,7 @@
     \includegraphics[width=0.7\linewidth]{brand/logo}
     \vfill
     \begin{minipage}{0.65\textwidth}
-        \raggedright
+        \raggedright\ralewayextra
         \color{color1}\huge\linespread{1.3}\textbf{\@title}\\[1ex]
         \color{color2}\normalsize\@author\\[1ex]
         \color{color2}\small\@date\\

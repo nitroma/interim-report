@@ -32,15 +32,18 @@
 \makeatletter
 \renewcommand{\maketitle}{
     \thispagestyle{empty}
+    % \geometry{margin=10mm}
     \hfill
-    \includegraphics[width=0.7\linewidth]{brand/logo}
-    \vfill
+    \begin{minipage}[t][0.5\linewidth][c]{0.5\linewidth}
+        \includegraphics[width=\linewidth]{brand/logo-tight.pdf}
+    \end{minipage}
+    \vfill\vfill
     \begin{minipage}{0.65\textwidth}
         \raggedright\ralewayextra
         \color{color1}\huge\linespread{1.3}\textbf{\@title}\\[1ex]
         \color{color2}\normalsize\@author\\[1ex]
         \color{color2}\small\@date\\
-    \end{minipage}\hfill
+    \end{minipage}
     \vfill
     \clearpage
 }

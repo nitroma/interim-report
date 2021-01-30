@@ -39,6 +39,8 @@
 % tables
 \usepackage{tabularx}
     \newcolumntype{Y}{>{\centering\arraybackslash}X}
+    \newcommand{\splitcell}[2][c]{%
+        \begin{tabular}[#1]{@{}c@{}}#2\end{tabular}}
 \usepackage{booktabs}
 \usepackage{multirow}
 \usepackage{multicol}

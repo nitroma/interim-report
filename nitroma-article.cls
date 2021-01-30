@@ -19,18 +19,20 @@
     \setmonofont{inconsolata}
 \RequirePackage[usefilenames]{firamath-otf}
 \RequirePackage{raleway}
+\newcommand{\headingfont}{\ralewayextra}
 
 %%% SECTION TITLE FORMAT
 \RequirePackage{titlesec}
 % \titleformat{\chapter}{\LARGE\bfseries\scshape\color{color1}}{\thechapter}{1em}{}[\titlerule]
-\titleformat{\section}{\color{color1}\Large\bfseries\ralewayextra}{\thesection}{1em}{}[\titlerule]
-\titleformat{\subsection}{\color{color1}\large\bfseries\ralewayextra}{\thesubsection}{1em}{}
-\titleformat{\subsubsection}{\color{color1}\bfseries\ralewayextra}{\thesubsubsection}{1em}{}
+\titleformat{\section}{\color{color1}\Large\bfseries\headingfont}{\thesection}{1em}{}[\titlerule]
+\titleformat{\subsection}{\color{color1}\large\bfseries\headingfont}{\thesubsection}{1em}{}
+\titleformat{\subsubsection}{\color{color1}\bfseries\headingfont}{\thesubsubsection}{1em}{}
 
-\titlespacing{\}{}{}{}
+\titlespacing{\subsection}{0pt}{*2}{*1}
+\titlespacing{\subsubsection}{0pt}{*1}{*1}
 
 %%% TITLEPAGE
-\RequirePackage{svg}
+\newcommand\subtitle[1]{\newcommand}
 \makeatletter
 \renewcommand{\maketitle}{
     \thispagestyle{empty}
@@ -41,7 +43,7 @@
     \end{minipage}
     \vfill\vfill
     \begin{minipage}{0.65\textwidth}
-        \raggedright\ralewayextra
+        \raggedright\headingfont
         \color{color1}\huge\linespread{1.3}\textbf{\@title}\\[1ex]
         \color{color2}\normalsize\@author\\[1ex]
         \color{color2}\small\@date\\

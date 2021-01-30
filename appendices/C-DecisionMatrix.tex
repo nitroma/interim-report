@@ -27,15 +27,28 @@ For product selection, $\lambda_{max}$=3.1218, CI=0.0409 and RI=0.58, hence the 
 \end{equation}
 
 4. Weighted Normalised Matrix for TOPSIS:
-
+Similarly to AHP analysis, a $n\times k$ matrix is constructed for $n$ criteria and $k$ alternatives. The criterion $X_{ij}$ are normalised and multiplied by their respective weighting $w_i$ as follows:
 \begin{equation}
-    \tilde{X}_{ij}
+    \tilde{X}_{ij}=\frac{X_{ij}}{\sqrt{\sum^{n}_{i=1}X_{ij}^{2}}}
 \end{equation}
 
-5. Euclidean distance from ideal best and ideal worst calculation:
+\begin{equation}
+    V_{ij}=\tilde{X}_{ij}\times w_j
+\end{equation}
+
+5. Euclidean distance from ideal best ($V_{j}^{+}$) and ideal worst ($V_{j}^{-})$ calculation:
+\begin{equation}
+    S_{i}^{+}=\sqrt{\sum_{j=1}^{n}(V_{ij}-V_{j}^{+})^2}
+\end{equation}
+
+\begin{equation}
+    S_{i}^{-}=\sqrt{\sum_{j=1}^{n}(V_{ij}-V_{j}^{-})^2}
+\end{equation}
 
 6. Evaluation of Performance Score and ranking:
-
+\begin{equation}
+    P_{i}=\frac{S_{i}^{-}}{S_{i}^{+}+S_{i}^{-}}
+\end{equation}
 \subsection{Summary of production routes}
 
 \subsection{Plant location}

@@ -39,7 +39,7 @@
 % tables
 \usepackage{tabularx}
     \newcolumntype{Y}{>{\centering\arraybackslash}X}
-    \newcommand{\splitcell}[2][c]{%
+    \newcommand{\splitcell}[2][t]{% https://tex.stackexchange.com/a/19678/135479
         \begin{tabular}[#1]{@{}c@{}}#2\end{tabular}}
 \usepackage{booktabs}
 \usepackage{multirow}

@@ -22,10 +22,12 @@
 
 %%% SECTION TITLE FORMAT
 \RequirePackage{titlesec}
-% \titleformat{\chapter}{\LARGE\bfseries\scshape\color{color1}}{\thechapter}{1ex}{}[\titlerule]
-\titleformat{\section}{\color{color1}\Large\bfseries\ralewayextra}{\thesection}{1ex}{}[\titlerule]
-\titleformat{\subsection}{\color{color1}\large\bfseries\ralewayextra}{\thesubsection}{1ex}{}
-\titleformat{\subsubsection}{\color{color1}\bfseries\ralewayextra}{\thesubsubsection}{1ex}{}
+% \titleformat{\chapter}{\LARGE\bfseries\scshape\color{color1}}{\thechapter}{1em}{}[\titlerule]
+\titleformat{\section}{\color{color1}\Large\bfseries\ralewayextra}{\thesection}{1em}{}[\titlerule]
+\titleformat{\subsection}{\color{color1}\large\bfseries\ralewayextra}{\thesubsection}{1em}{}
+\titleformat{\subsubsection}{\color{color1}\bfseries\ralewayextra}{\thesubsubsection}{1em}{}
+
+\title
 
 %%% TITLEPAGE
 \RequirePackage{svg}

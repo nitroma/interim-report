@@ -27,7 +27,7 @@
 \titleformat{\subsection}{\color{color1}\large\bfseries\ralewayextra}{\thesubsection}{1em}{}
 \titleformat{\subsubsection}{\color{color1}\bfseries\ralewayextra}{\thesubsubsection}{1em}{}
 
-\title
+\titlespacing{\}{}{}{}
 
 %%% TITLEPAGE
 \RequirePackage{svg}

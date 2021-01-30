@@ -6,6 +6,20 @@
 
 1. Pair-wise comparison of criteria: the scale developed by Saaty was adopted to assess the relative importance of one criteria to another. The fundamental scale is as follows: 1 for equal importance, 3 for moderate importance of one criteria over the other, 5 for essential or strong importance, 7 for very strong importance and 9 for extreme importance. Even numbers can be used as intermediate values. The normalised weightings were then calculated. The results for product selection are shown in Table
 
+\begin{table}[]
+\centering
+\caption{Pair-wise criteria comparison for product selection}
+\label{teb:pairwise}
+\begin{tabular}{l|l|l|l|l}
+\cline{2-5}
+                                                                & Economic potential & Process complexity & Environmental and safety & \multicolumn{1}{l|}{Weights} \\ \hline
+\multicolumn{1}{|l|}{Economic potential}                        & 1.000              & 3.000              & 0.333                    & \multicolumn{1}{l|}{0.286}   \\ \hline
+\multicolumn{1}{|l|}{Process complexity}                        & 0.333              & 1.000              & 0.333                    & \multicolumn{1}{l|}{0.14}    \\ \hline
+\multicolumn{1}{|l|}{Environmental and   safety considerations} & 3.000              & 3.000              & 1.000                    & \multicolumn{1}{l|}{0.574}   \\ \hline
+\multicolumn{1}{|r|}{Sum}                                       & 4.333              & 7.000              & 1.667                    &                              \\ \cline{1-4}
+\end{tabular}
+\end{table}
+
 
 2. Validation of consistency: The consistency between the weightings was verified with a method proposed by Saaty [cite]. The largest eigenvalue ($\lambda_{max}$) was determine with the following formula where $i$ refers to the criteria:
 \begin{equation}
@@ -36,7 +50,8 @@ Similarly to AHP analysis, a $n\times k$ matrix is constructed for $n$ criteria 
     V_{ij}=\tilde{X}_{ij}\times w_j
 \end{equation}
 
-5. Euclidean distance from ideal best ($V_{j}^{+}$) and ideal worst ($V_{j}^{-})$ calculation:
+5. Calculation of Euclidean distance from ideal best ($V_{j}^{+}$) and ideal worst ($V_{j}^{-})$ :
+The ideal best and ideal worst are the maximum and mimnim values for each criterion. The distance of each criterion to the ideal best and ideal worst values is calculated with those equations:
 \begin{equation}
     S_{i}^{+}=\sqrt{\sum_{j=1}^{n}(V_{ij}-V_{j}^{+})^2}
 \end{equation}
@@ -46,9 +61,12 @@ Similarly to AHP analysis, a $n\times k$ matrix is constructed for $n$ criteria 
 \end{equation}
 
 6. Evaluation of Performance Score and ranking:
+Finally the performance score is the ratio between the Euclidian distance from the ideal worst and the sum of Euclidian distances. The highest score indicates the most optimum solution.
+
 \begin{equation}
     P_{i}=\frac{S_{i}^{-}}{S_{i}^{+}+S_{i}^{-}}
 \end{equation}
+
 \subsection{Summary of production routes}
 
 \subsection{Plant location}

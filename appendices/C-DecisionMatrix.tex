@@ -4,24 +4,24 @@
 
 \subsection{Sample AHP and TOPSIS calculation for product selection}
 
-1. Pair-wise comparison of criteria: the scale developed by Saaty was adopted to assess the relative importance of one criteria to another. The fundamental scale is as follows: 1 for equal importance, 3 for moderate importance of one criteria over the other, 5 for essential or strong importance, 7 for very strong importance and 9 for extreme importance. Even numbers can be used as intermediate values. The normalised weightings were then calculated. The results for product selection are shown in Table
+1. Pair-wise comparison of criteria: the scale developed by Saaty was adopted to assess the relative importance of one criteria to another \cite{saaty_analytic_1987}. The fundamental scale is as follows: 1 for equal importance, 3 for moderate importance of one criteria over the other, 5 for essential or strong importance, 7 for very strong importance and 9 for extreme importance. Even numbers can be used as intermediate values. The normalised weightings were then calculated. The results for product selection are shown in Table
 
 \begin{table}[]
 \centering
 \caption{Pair-wise criteria comparison for product selection}
 \label{teb:pairwise}
-\begin{tabular}{l|l|l|l|l}
+\begin{tabular}{p{4cm}|p{3cm}|p{3cm}|p{3cm}|p{1cm}}
 \cline{2-5}
-                                                                & Economic potential & Process complexity & Environmental and safety & \multicolumn{1}{l|}{Weights} \\ \hline
-\multicolumn{1}{|l|}{Economic potential}                        & 1.000              & 3.000              & 0.333                    & \multicolumn{1}{l|}{0.286}   \\ \hline
-\multicolumn{1}{|l|}{Process complexity}                        & 0.333              & 1.000              & 0.333                    & \multicolumn{1}{l|}{0.14}    \\ \hline
-\multicolumn{1}{|l|}{Environmental and   safety considerations} & 3.000              & 3.000              & 1.000                    & \multicolumn{1}{l|}{0.574}   \\ \hline
-\multicolumn{1}{|r|}{Sum}                                       & 4.333              & 7.000              & 1.667                    &                              \\ \cline{1-4}
+                                                                & Economic potential & Process complexity & Environmental and safety & Weights \\ \hline
+Economic potential                        & 1.000              & 3.000              & 0.333                    & 0.286   \\ \hline
+Process complexity                      & 0.333              & 1.000              & 0.333                    & 0.14    \\ \hline
+Environmental and   safety & 3.000              & 3.000              & 1.000                    & 0.574   \\ \hline
+Sum                                      & 4.333              & 7.000              & 1.667                    &                              \\ \cline{1-4}
 \end{tabular}
 \end{table}
 
 
-2. Validation of consistency: The consistency between the weightings was verified with a method proposed by Saaty [cite]. The largest eigenvalue ($\lambda_{max}$) was determine with the following formula where $i$ refers to the criteria:
+2. Validation of consistency: The consistency between the weightings was verified with a method proposed by Saaty \cite{saaty_analytic_1987}. The largest eigenvalue ($\lambda_{max}$) was determine with the following formula where $i$ refers to the criteria:
 \begin{equation}
     \lambda_{max}=\sum^{i} \mathrm{w}_{i}\cdot \mathrm{Sum}(i)
 \end{equation}
@@ -31,7 +31,7 @@ The consistency index (CI) is calculated for the number of criteria $n$:
    \mathrm{CI} = \frac{\lambda_{max}-n}{n-1}
 \end{equation}
 
-The consistency ratio CI/RI is then calculated using the Random Consistency Index (RI) retrieved from (Saaty, 1980). 
+The consistency ratio CI/RI is then calculated using the Random Consistency Index (RI) retrieved from (Saaty, 1987). 
 
 For product selection, $\lambda_{max}$=3.1218, CI=0.0409 and RI=0.58, hence the consistency ratio is worth 0.1. Weightings are deemed consistent if the ratio is less than 10\%.\\
 

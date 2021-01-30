@@ -5,7 +5,7 @@
 \RequirePackage[margin=20mm]{geometry}
 
 %%% COLOURS
-\RequirePackage{xcolor}
+\RequirePackage[table,xcdraw]{xcolor}
 \definecolor{color1}{HTML}{2D4F6C}
 \definecolor{color2}{HTML}{8BDBDE}
 \definecolor{red}{HTML}{EF476F}

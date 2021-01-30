@@ -32,7 +32,7 @@
 \titlespacing{\subsubsection}{0pt}{*1}{*1}
 
 %%% TITLEPAGE
-\newcommand\subtitle[1]{\newcommand}
+\newcommand\subtitle[1]{\newcommand\@subtitle{#1}}
 \makeatletter
 \renewcommand{\maketitle}{
     \thispagestyle{empty}
@@ -43,8 +43,10 @@
     \end{minipage}
     \vfill\vfill
     \begin{minipage}{0.65\textwidth}
-        \raggedright\headingfont
-        \color{color1}\huge\linespread{1.3}\textbf{\@title}\\[1ex]
+        \raggedright\headingfont\bfseries
+        \color{color2}\large\MakeUppercase{\@subtitle}\\
+        \color{color1}\huge\linespread{1.3}\@title\\[2ex]
+        \mdseries\rmfamily
         \color{color2}\normalsize\@author\\[1ex]
         \color{color2}\small\@date\\
     \end{minipage}

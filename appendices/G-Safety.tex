@@ -10,9 +10,9 @@
 
 \begin{longtable}{lccccS[table=format=2.1]S[table=format=3.0]S[table=format=2.3]ll}
 \caption{List of chemicals and associated hazards}
-\label{tab:chemicals}\\
+\label{tab:chemicals}
 \toprule
-                                                                 Chemical substance & \multicolumn{4}{c}{NFPA Ratings} & {{\splitcell{Flash point \\  (\si{\celsius})}}}   & {{\splitcell{Auto-ignition \\Temperature \\ (\si{\celsius})}}} & {{\splitcell{Vapour Pressure\\  (\si{\kPa})}}} &  Hazard Codes & Hazard Categories \\  \cmidrule{2-5}
+                                                                 Chemical substance & \multicolumn{4}{c}{NFPA Ratings} & {\splitcell{Flash point \\  (\si{\celsius})}}   & {\splitcell{Auto-ignition \\Temperature \\ (\si{\celsius})}} & {\splitcell{Vapour Pressure\\  (\si{\kPa})}} &  Hazard Codes & Hazard Categories \\  \cmidrule{2-5}
      & \rcell{\cellcolor{blue} Health} & \rcell[22mm]{\cellcolor{red} Flammability} & \rcell{\cellcolor{yellow} Reactivity} & \rcell{Special Hazards}  \\ 
 
  \midrule
@@ -100,12 +100,14 @@ Water & 0   &  0    & 0   &     &     &    & 2.3  &   &
 
 \subsection{Likelihood-Severity Risk Matrix}
 
+
+
 \begin{table}
     \centering\footnotesize
     \caption{Caption}
     \label{tab:my_label}
-
-\begin{tabularx}{\linewidth}{|p{3cm}|X|c|c|c|c|c|c|c|}
+\begin{adjustbox}{max width=\linewidth}
+\begin{tabularx}{\linewidth}{|p{3cm}|p{8cm}|c|c|c|c|c|c|c|}
 
                                                                                                                        \textbf{Hazard Description}  & \textbf{Consequences}                                                                                                                                                                                                                                                                                                                                                                          &                                       & \multicolumn{3}{c|}{\textbf{Severity}}                                                                                                                                                                  & \multicolumn{3}{c|}{\textbf{Risk}}                                                                                                                                                                       \\ \cline{4-9} 
                                                                                      & \multicolumn{1}{c|}{\multirow{-2}{*}{}}                                                                                                                                                                                                                                                                                                                                   & \multirow{-2}{*}{\textbf{Likelihood}} & \textbf{To  People} & \textbf{To the Plant} & \textbf{To the Environment} & \textbf{To  People} & \textbf{To the Plant} & \textbf{To the  Environment}\\
@@ -116,6 +118,7 @@ Leakage of Propanol  from storage or  process line                           & -
 Leakage of Nitric  acid from storage  or process line                        & - Nitric acid is a corrosive, chronic toxin: human ingestion may result in - Leaching of nitric acid into water streams may  be lethal to aquatic life - May damage plant equipment due to the corrosive  nature of substance                                                                                                                & Unlikely                              & Severe                                                        & Moderate                                                        & Serious                                                               & \cellcolor[HTML]{FCFF2F}\textbf{Medium}                       & \cellcolor[HTML]{34FF34}\textbf{Low}                            & \cellcolor[HTML]{FCFF2F}\textbf{Medium}                                 \\
 Leakage of Toluene  from storage  or process line                            & - Toluene is highly flammable and may result in a     fire if exposed to other fire tetrahedron elements - Toluene is toxic and corrosive: ingestion may     cause long-term health issues and fatality   - Toluene is toxic to aquatic life. It may also result  in  the production of photochemical smog                                   & Unlikely                              & Severe                                                        & Very  Serious         & Severe                                                                & \cellcolor[HTML]{FCFF2F}\textbf{Medium}                       & \cellcolor[HTML]{FCFF2F}\textbf{Medium}                         & \cellcolor[HTML]{FCFF2F}\textbf{Medium}                                 
 \end{tabularx}
+\end{adjustbox}
 \end{table}
 % \end{landscape}
 

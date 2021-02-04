@@ -8,130 +8,121 @@
 \subsection{Chemical List}
 
 
-\begin{longtable}{lccccS[table=format=2.1]S[table=format=3.0]S[table=format=2.3]ll}
+\begin{longtable}{cccccccccc}
 \caption{List of chemicals and associated hazards}
-\label{tab:chemicals}
+\label{tab:chemicals}\\
 \toprule
-                                                                 Chemical substance & \multicolumn{4}{c}{NFPA Ratings} & {\splitcell{Flash point \\  (\si{\celsius})}}   & {\splitcell{Auto-ignition \\Temperature \\ (\si{\celsius})}} & {\splitcell{Vapour Pressure\\  (\si{\kPa})}} &  Hazard Codes & Hazard Categories \\  \cmidrule{2-5}
-     & \rcell{\cellcolor{blue} Health} & \rcell[22mm]{\cellcolor{red} Flammability} & \rcell{\cellcolor{yellow} Reactivity} & \rcell{Special Hazards}  \\ 
+                                                                 \splitcell{Chemical \\substance} & \multicolumn{4}{c}{NFPA Ratings} & \splitcell{Flash point \\  (\textdegree C)}   & \splitcell{Auto-ignition \\Temperature \\ (\textdegree C)} & \splitcell{Vapour Pressure\\  (kPa)} &  \splitcell{Hazard\\ Codes} & \splitcell{Hazards \\ Categories} \\  
+     & \rcell{\cellcolor{blue} Health} & \rcell{\cellcolor{red} Flammability} & \rcell{\cellcolor{yellow} Reactivity} & \rcell{Special Hazards}  \\ 
 
- \midrule
+ \hline
  
-Ethanol &  2   &   3    & 0    &    & 13    & 363 & 5.95  & H225, H319 &  \splitcell{ Toxic: Category 3\\ Health : Category 2\\ Irritant: Category 3} 
+Ethanol &  2   &   3    & 0    &    & 13    & 363 & 5.95  & H225, H319 &  \vtop{\hbox{\strut Toxic: Category 3}\hbox{\strut Health : Category 2}\hbox{\strut Irritant: Category 3}} 
  \\
- 
+ \hline
 
-H-mordenite &     &      &    &    &    &     &    &  &
+H-mordenite &  -   &-      &    -& -   &    -& -    & -   & - &
  \\
+ \hline
  
- 
-Hydrochloric Acid & 3    &  0    & 1   &     &     &     & 12.5 & \splitcell{ H290, H314,\\ H318, H335}   & \splitcell{ Corrosive: Category 1\\ Irritant : Category 1\\ Toxic: Category 3} 
+Hydrochloric Acid & 3    &  0    & 1   &     &  -   & -    & 12.5 & \vtop{\hbox{\strut H290, H314,} \hbox{\strut H318, H335}}   & \vtop{\hbox{\strut Corrosive: Category 1}\hbox{\strut Irritant : Category 1}\hbox{\strut Toxic: Category 3}} 
  \\
+ \hline
  
- 
-Hydrogen (Gaseous) & 0    &  4    & 0   &     &     & 566    &  & H220, H280   & 
+Hydrogen (Gaseous) & 0    &  4    & 0   &  -   &  -   & 566    & - & H220, H280   & -
  \\
+ \hline
  
- 
-Methanol & 1    &  3    & 0   &     &  9.7   & 455    & 0.128 & \splitcell{ H225, H301, \\ H311, H331, \\ H370 }    & \splitcell{ Toxic: Category 3\\ Health : Category 1} 
+Methanol & 1    &  3    & 0   &  -   &  9.7   & 455    & 0.128 & \vtop{\hbox{\strut H225, H301, } \hbox{\strut H311, H331, } \hbox{\strut H370 }}    & \vtop{\hbox{\strut Toxic: Category 3}\hbox{\strut Health : Category 1}} 
  \\ 
+ \hline
  
- 
-Nitric acid & 4   &  0    & 0   &  OX   &     &      & 0.94 & \splitcell{ H272, H290, \\ H331, H314,  \\ H318 }    & \splitcell{ Oxidising: Category 3\\ Corrosion : Category 1\\ Toxic : Category 3} 
+Nitric acid & 4   &  0    & 0   &  OX   &  -   &  -    & 0.94 & \vtop{\hbox{\strut H272, H290, } \hbox{\strut H331, H314,  } \hbox{\strut H318 }}    & \vtop{\hbox{\strut Oxidising: Category 3}\hbox{\strut Corrosion : Category 1}\hbox{\strut Toxic : Category 3}} 
 \\
-
+\hline
  
-o-toluidine & 3   &  2    & 0   &     &  85   &  480   &  0.3 & \splitcell{ H301, H312,  \\ H331, H315,   \\ H318, H341,  \\ H350, H400,  \\ H411}    & \splitcell{ Toxic: Category 3} 
+o-toluidine & 3   &  2    & 0   &  -   &  85   &  480   &  0.3 & \vtop{\hbox{\strut H301, H312,  } \hbox{\strut H331, H315,   } \hbox{\strut H318, H341,  }\hbox{\strut H350, H400,  }\hbox{\strut H411}}    & \vtop{\hbox{\strut Toxic: Category 3}} 
 \\
-
+\hline
  
-p-toluidine & 3   &  2    & 0   &     &  87   &  480   & 0.026  & \splitcell{ H301, H311,\\ H331, H317, \\ H319, H334, \\ H351, H410}    & \splitcell{ Toxic: Category 3} 
+p-toluidine & 3   &  2    & 0   &  -   &  87   &  480   & 0.026  & \vtop{\hbox{\strut H301, H311,} \hbox{\strut H331, H317, } \hbox{\strut H319, H334, }\hbox{\strut H351, H410}}    & \vtop{\hbox{\strut Toxic: Category 3}} 
 \\
-
+\hline
  
-Propanol & 1   &  3    & 0   &     &    &  371   & 2.5 & \splitcell{ H225, H336, \\ H318 }    & 
+Propanol & 1   &  3    & 0   &  -   &  -  &  371   & 2.5 & \vtop{\hbox{\strut H225, H336, } \hbox{\strut H318 } }    & \vtop{\hbox{\strut - }} 
 \\
-
-Sodium Hydroxide & 3   &  0    & 1   &     &    &    & 1.87  &   & 
+\hline
+Sodium Hydroxide & 3   &  0    & 1   &  -   &  -  &  -  & 1.87  & -  & -
 \\
-
+\hline
  
- Sodium Polysulfide & 3   &  0    & 1   &     &     &    &  &   &  
+ Sodium Polysulfide & 3   &  0    & 1   &  -   &  -   &  -  &  &   &  
 \\
-
+\hline
  
-Sulphur & 2   &  1    & 0   &     &     &    &  &   & 
+Sulphur & 2   &  1    & 0   &  -   &  -   &  -  &  &   & 
 \\
-
+\hline
  
-Sulfuric acid & 3   &  0  & 2   &     &     &    &  & H314,H318  & Corrosion: Category 1A
+Sulfuric acid & 3   &  0  & 2   &  -   &  -   &  -  &  & H314,H318  & Corrosion: Category 1A
 \\
-
+\hline
  
-Toluene & 2   &  3    & 0   &     &  4   &  535   & 2.9 & \splitcell{ H225, H304,\\ H315, H361d, \\ H336, H373,  \\ H412}    & \splitcell{ Toxic: Category 2\\ Flammable: Category 2} 
+Toluene & 2   &  3    & 0   &  -   &  4   &  535   & 2.9 & \vtop{\hbox{\strut H225, H304,} \hbox{\strut H315, H361d, } \hbox{\strut H336, H373,  }\hbox{\strut H412}}    & \vtop{\hbox{\strut Toxic: Category 2}\hbox{\strut Flammable: Category 2}} 
 \\
-
-Water & 0   &  0    & 0   &     &     &    & 2.3  &   & 
+\hline
+Water & 0   &  0    & 0   &  -   &  -   &  -  & 2.3  &   & 
 \\
+ \hline
  
- 
-2-Nitrotoluene & 3   &  1    & 1  &     &  95   & 420    & 0.016 & \splitcell{ H302, H340, \\ H350, H361f, \\ H411 }    & \splitcell{ Toxic: Category 1B} 
+2-Nitrotoluene & 3   &  1    & 1  &   -  &  95   & 420    & 0.016 & \vtop{\hbox{\strut H302, H340, } \hbox{\strut H350, H361f, } \hbox{\strut H411 }}    & \vtop{\hbox{\strut Toxic: Category 1B}} 
  \\ 
+ \hline
  
- 
-3-Nitrotoluene & 3   &  1    & 1  &     &  101   & 440    & 0.02 & \splitcell{ H301, H311,  \\ H331, H373, \\ H411 }    & \splitcell{ Toxic: Category 3} 
+3-Nitrotoluene & 3   &  1    & 1  &   -  &  101   & 440    & 0.02 & \vtop{\hbox{\strut H301, H311,  } \hbox{\strut H331, H373, } \hbox{\strut H411 }}    & \vtop{\hbox{\strut Toxic: Category 3}} 
  \\ 
-  
+  \hline
  
-4-Nitrotoluene & 3   &  1    & 1  &      &  106   & 390    &  0.013 & \splitcell{ H301, H311,  \\ H331, H373, \\ H411 }    & \splitcell{ Toxic: Category 3} 
+4-Nitrotoluene & 3   &  1    & 1  &  -    &  106   & 390    &  0.013 & \vtop{\hbox{\strut H301, H311,  } \hbox{\strut H331, H373, } \hbox{\strut H411 }}    & \vtop{\hbox{\strut Toxic: Category 3}} 
  \\ 
-   
+   \hline
  
-4-Aminobenzaldehyde & 2   &  1    & 0  &    &  122   &   &   & \splitcell{ H302, H315,   \\ H317, H319, \\ H335 }    & \splitcell{ Toxic: Category 3} 
+4-Aminobenzaldehyde & 2   &  1    & 0  & -   &  122   &  - & -  & \vtop{\hbox{\strut H302, H315,   } \hbox{\strut H317, H319, } \hbox{\strut H335 }}    & \vtop{\hbox{\strut Toxic: Category 3}} 
  \\ 
-    
+    \hline
  
-4-Aminobenzoic acid & 2   &  1    & 1  &    &  171   &   &   & H412   & \splitcell{ Toxic: Category 3} 
+4-Aminobenzoic acid & 2   &  1    & 1  & -   &  171   &  - & -  & H412   & \vtop{\hbox{\strut Toxic: Category 3}} 
  \\ 
 \bottomrule
 \end{longtable}
-\end{landscape}
+%\end{landscape}
 
 
 \subsection{Likelihood-Severity Risk Matrix}
 
-
-
-\begin{table}
-    \centering\footnotesize
-    \caption{Caption}
-    \label{tab:my_label}
-\begin{adjustbox}{max width=\linewidth}
-\begin{tabularx}{\linewidth}{|p{3cm}|p{8cm}|c|c|c|c|c|c|c|}
-
-                                                                                                                       \textbf{Hazard Description}  & \textbf{Consequences}                                                                                                                                                                                                                                                                                                                                                                          &                                       & \multicolumn{3}{c|}{\textbf{Severity}}                                                                                                                                                                  & \multicolumn{3}{c|}{\textbf{Risk}}                                                                                                                                                                       \\ \cline{4-9} 
-                                                                                     & \multicolumn{1}{c|}{\multirow{-2}{*}{}}                                                                                                                                                                                                                                                                                                                                   & \multirow{-2}{*}{\textbf{Likelihood}} & \textbf{To  People} & \textbf{To the Plant} & \textbf{To the Environment} & \textbf{To  People} & \textbf{To the Plant} & \textbf{To the  Environment}\\
-Thermal runaway  reaction  (caused by  uncontrollable  temperature rise) & - May lead to overpressure in the reactor,    resulting in a fire and explosion                                                                                                                                                                                                                                                                      & Probable                              & Severe                                                        & Severe                                                          & Serious                                                               & \cellcolor[HTML]{FD6864}\textbf{High}                         & \cellcolor[HTML]{FD6864}\textbf{High}                           & \cellcolor[HTML]{FD6864}\textbf{High}                                   \\
-Release of  Hydrogen Gas                                                       & - Hydrogen is highly flammable: if exposed     to fire tetrahedron elements (oxidant, heat    and ignition), the flammable mixture can      cause a fire and explosion  - If released into the environment, hydrogen     may contribute to increased levels of     atmospheric methane and ozone via reaction     with hydroxyl radicals & Possible                              & Very  Serious       & Very Serious          & Serious                                                               & \cellcolor[HTML]{FD6864}\textbf{High}                         & \cellcolor[HTML]{FD6864}\textbf{High}                           & \cellcolor[HTML]{FCFF2F}\textbf{Medium}                                 \\
-Overpressure in  reactorcaused by  leakage/rupture                           & - Overpressure may result in a blast/explosion                                                                                                                                                                                                                                                                                                                                                 & Unlikely                              & Severe                                                        & Severe                                                          & Serious                                                               & \cellcolor[HTML]{FCFF2F}\textbf{Medium}                       & \cellcolor[HTML]{FCFF2F}\textbf{Medium}                         & \cellcolor[HTML]{FCFF2F}\textbf{Medium}                                 \\
-Leakage of Propanol  from storage or  process line                           & - Propanol is highly flammable and may result in    a fire if exposed to other fire tetrahedron elements - Propanol is non-toxic to aquatic life and readily     biodegradable                                                                                                                                                                   & Unlikely                              & Severe                                                        & Severe                                                          & Moderate                                                              & \cellcolor[HTML]{FCFF2F}\textbf{Medium}                       & \cellcolor[HTML]{FCFF2F}\textbf{Medium}                         & \cellcolor[HTML]{FCFF2F}\textbf{Medium}                                 \\
-Leakage of Nitric  acid from storage  or process line                        & - Nitric acid is a corrosive, chronic toxin: human ingestion may result in - Leaching of nitric acid into water streams may  be lethal to aquatic life - May damage plant equipment due to the corrosive  nature of substance                                                                                                                & Unlikely                              & Severe                                                        & Moderate                                                        & Serious                                                               & \cellcolor[HTML]{FCFF2F}\textbf{Medium}                       & \cellcolor[HTML]{34FF34}\textbf{Low}                            & \cellcolor[HTML]{FCFF2F}\textbf{Medium}                                 \\
-Leakage of Toluene  from storage  or process line                            & - Toluene is highly flammable and may result in a     fire if exposed to other fire tetrahedron elements - Toluene is toxic and corrosive: ingestion may     cause long-term health issues and fatality   - Toluene is toxic to aquatic life. It may also result  in  the production of photochemical smog                                   & Unlikely                              & Severe                                                        & Very  Serious         & Severe                                                                & \cellcolor[HTML]{FCFF2F}\textbf{Medium}                       & \cellcolor[HTML]{FCFF2F}\textbf{Medium}                         & \cellcolor[HTML]{FCFF2F}\textbf{Medium}                                 
-\end{tabularx}
-\end{adjustbox}
-\end{table}
-% \end{landscape}
+\begin{longtable}{|c|l|c|c|c|c|c|c|c|}
+\hline
+                                                                                                                         & \multicolumn{1}{c|}{}                                                                                                                                                                                                                                                                                                                                                                          &                                       & \multicolumn{3}{c|}{\textbf{Severity}}                                                                                                                                                                  & \multicolumn{3}{c|}{\textbf{Risk}}                                                                                                                                                                       \\ \cline{4-9} 
+\multirow{-2}{*}{\textbf{Hazard Description}}                                                                                     & \multicolumn{1}{c|}{\multirow{-2}{*}{\textbf{Consequences}}}                                                                                                                                                                                                                                                                                                                                   & \multirow{-2}{*}{\textbf{Likelihood}} & \textbf{\begin{tabular}[c]{@{}c@{}}To \\ People\end{tabular}} & \textbf{\begin{tabular}[c]{@{}c@{}}To the\\ Plant\end{tabular}} & \textbf{\begin{tabular}[c]{@{}c@{}}To the\\ Environment\end{tabular}} & \textbf{\begin{tabular}[c]{@{}c@{}}To \\ People\end{tabular}} & \textbf{\begin{tabular}[c]{@{}c@{}}To the\\ Plant\end{tabular}} & \textbf{\begin{tabular}[c]{@{}c@{}}To the\\  Environment\end{tabular}} \\ \hline
+\begin{tabular}[c]{@{}c@{}}Thermal runaway \\ reaction \\ (caused by\\  uncontrollable \\ temperature rise)\end{tabular} & \begin{tabular}[c]{@{}l@{}}- May lead to overpressure in the reactor, \\   resulting in a fire and explosion\end{tabular}                                                                                                                                                                                                                                                                      & Probable                              & Severe                                                        & Severe                                                          & Serious                                                               & \cellcolor[HTML]{FD6864}\textbf{High}                         & \cellcolor[HTML]{FD6864}\textbf{High}                           & \cellcolor[HTML]{FD6864}\textbf{High}                                  \\ \hline
+\begin{tabular}[c]{@{}c@{}}Release of \\ Hydrogen Gas\end{tabular}                                                       & \begin{tabular}[c]{@{}l@{}}- Hydrogen is highly flammable: if exposed \\    to fire tetrahedron elements (oxidant, heat\\    and ignition), the flammable mixture can \\     cause a fire and explosion \\ - If released into the environment, hydrogen \\    may contribute to increased levels of \\    atmospheric methane and ozone via reaction\\     with hydroxyl radicals\end{tabular} & Possible                              & \begin{tabular}[c]{@{}c@{}}Very \\ Serious\end{tabular}       & \begin{tabular}[c]{@{}c@{}}Very\\ Serious\end{tabular}          & Serious                                                               & \cellcolor[HTML]{FD6864}\textbf{High}                         & \cellcolor[HTML]{FD6864}\textbf{High}                           & \cellcolor[HTML]{FCFF2F}\textbf{Medium}                                \\ \hline
+\begin{tabular}[c]{@{}c@{}}Overpressure in\\  reactorcaused by \\ leakage/rupture\end{tabular}                           & - Overpressure may result in a blast/explosion                                                                                                                                                                                                                                                                                                                                                 & Unlikely                              & Severe                                                        & Severe                                                          & Serious                                                               & \cellcolor[HTML]{FCFF2F}\textbf{Medium}                       & \cellcolor[HTML]{FCFF2F}\textbf{Medium}                         & \cellcolor[HTML]{FCFF2F}\textbf{Medium}                                \\ \hline
+\begin{tabular}[c]{@{}c@{}}Leakage of Propanol\\  from storage or \\ process line\end{tabular}                           & \begin{tabular}[c]{@{}l@{}}- Propanol is highly flammable and may result in \\   a fire if exposed to other fire tetrahedron elements\\ - Propanol is non-toxic to aquatic life and readily \\    biodegradable\end{tabular}                                                                                                                                                                   & Unlikely                              & Severe                                                        & Severe                                                          & Moderate                                                              & \cellcolor[HTML]{FCFF2F}\textbf{Medium}                       & \cellcolor[HTML]{FCFF2F}\textbf{Medium}                         & \cellcolor[HTML]{FCFF2F}\textbf{Medium}                                \\ \hline
+\begin{tabular}[c]{@{}c@{}}Leakage of Nitric \\ acid from storage \\ or process line\end{tabular}                        & \begin{tabular}[c]{@{}l@{}}- Nitric acid is a corrosive, chronic toxin: human\\ ingestion may result in\\ - Leaching of nitric acid into water streams may \\ be lethal to aquatic life\\ - May damage plant equipment due to the corrosive\\  nature of substance\end{tabular}                                                                                                                & Unlikely                              & Severe                                                        & Moderate                                                        & Serious                                                               & \cellcolor[HTML]{FCFF2F}\textbf{Medium}                       & \cellcolor[HTML]{34FF34}\textbf{Low}                            & \cellcolor[HTML]{FCFF2F}\textbf{Medium}                                \\ \hline
+\begin{tabular}[c]{@{}c@{}}Leakage of Toluene \\ from storage \\ or process line\end{tabular}                            & \begin{tabular}[c]{@{}l@{}}- Toluene is highly flammable and may result in a \\    fire if exposed to other fire tetrahedron elements\\ - Toluene is toxic and corrosive: ingestion may \\    cause long-term health issues and fatality  \\ - Toluene is toxic to aquatic life. It may also result\\  in  the production of photochemical smog\end{tabular}                                   & Unlikely                              & Severe                                                        & \begin{tabular}[c]{@{}c@{}}Very \\ Serious\end{tabular}         & Severe                                                                & \cellcolor[HTML]{FCFF2F}\textbf{Medium}                       & \cellcolor[HTML]{FCFF2F}\textbf{Medium}                         & \cellcolor[HTML]{FCFF2F}\textbf{Medium}                                \\ \hline
+\end{longtable}
+\end{landscape}
 
 
 \begin{table}[]
 \begin{tabular}{cc|c|c|c|c|c|}
-
+\hline
 \multicolumn{1}{|c|}{}                           & 5                                             & \cellcolor[HTML]{F8FF00}Medium & \cellcolor[HTML]{F8FF00}Medium & \cellcolor[HTML]{FD6864}High   & \cellcolor[HTML]{FD6864}High   & \cellcolor[HTML]{FD6864}High   \\ \cline{2-7} 
 \multicolumn{1}{|c|}{}                           & 4                                             & \cellcolor[HTML]{F8FF00}Medium & \cellcolor[HTML]{F8FF00}Medium & \cellcolor[HTML]{FD6864}High   & \cellcolor[HTML]{FD6864}High   & \cellcolor[HTML]{FD6864}High   \\ \cline{2-7} 
 \multicolumn{1}{|c|}{}                           & 3                                             & \cellcolor[HTML]{F8FF00}Medium & \cellcolor[HTML]{F8FF00}Medium & \cellcolor[HTML]{F8FF00}Medium & \cellcolor[HTML]{FD6864}High   & \cellcolor[HTML]{FD6864}High   \\ \cline{2-7} 
 \multicolumn{1}{|c|}{}                           & 2                                             & \cellcolor[HTML]{34FF34}Low    & \cellcolor[HTML]{F8FF00}Medium & \cellcolor[HTML]{F8FF00}Medium & \cellcolor[HTML]{F8FF00}Medium & \cellcolor[HTML]{FD6864}High   \\ \cline{2-7} 
 \multicolumn{1}{|c|}{}                           & 1                                             & \cellcolor[HTML]{34FF34}Low    & \cellcolor[HTML]{34FF34}Low    & \cellcolor[HTML]{34FF34}Low    & \cellcolor[HTML]{34FF34}Low    & \cellcolor[HTML]{F8FF00}Medium \\ \cline{2-7} 
-\multicolumn{1}{|c|}{\multirow{-6}{*}{Severity}} & \cellcolor[HTML]{C0C0C0}                      & A                              & B                              & C                              & D                              & E                              \\ 
+\multicolumn{1}{|c|}{\multirow{-6}{*}{Severity}} & \cellcolor[HTML]{C0C0C0}                      & A                              & B                              & C                              & D                              & E                              \\ \hline
 \multicolumn{1}{l}{\cellcolor[HTML]{FFFFFF}}     & \multicolumn{1}{l|}{\cellcolor[HTML]{FFFFFF}} & \multicolumn{5}{c|}{Likelihood}                                                                                                                                    \\ \cline{3-7} 
 \end{tabular}
 \end{table}

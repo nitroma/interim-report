@@ -40,7 +40,8 @@
     \newcolumntype{Y}{>{\centering\arraybackslash}X}
     \newcommand{\splitcell}[2][t]{% https://tex.stackexchange.com/a/19678/135479
         \begin{tabular}[#1]{@{}c@{}}#2\end{tabular}}
-    \newcommand{\rcell}[2][2cm]{\rotatebox[origin=r]{90}{\parbox{#1}{\raggedleft#2}}} % ideally should use origin=rt https://tex.stackexchange.com/a/367139/135479 but that goes weird
+    \newcommand{\rtext}[2][90]{\rotatebox[origin=r]{#1}{#2}}
+    \newcommand{\rcell}[2][2cm]{\rtext{\parbox{#1}{\raggedleft#2}}} % ideally should use origin=rt https://tex.stackexchange.com/a/367139/135479 but that goes weird
 \usepackage{booktabs}
 \usepackage{multirow}
 \usepackage{multicol}

@@ -81,7 +81,6 @@ Severity & \multicolumn{5}{c}{Likelihood}                                       
 
 
 
-\usepackage{booktabs}
 \begin{longtable}{@{}ccccc@{}}
 \toprule
 \textbf{S} & \textbf{Severity} & \textbf{To the People}                                     & \textbf{To the Plant}      & \textbf{To the Environemnt}      \\ \midrule
@@ -92,3 +91,16 @@ Severity & \multicolumn{5}{c}{Likelihood}                                       
 5          & Severe            & Several Fatalitie                                          & Complete Destruction       & Multiple Environments Affected   \\ \bottomrule
 
 \end{longtable}
+
+
+\begin{table}[]
+\begin{tabular}{@{}ccc@{}}
+\toprule
+L & Likelihood & Probability (P) in 1 year              \\ \midrule
+A & improbable & P once \textless   0.001               \\
+B & unlikely   & 0.001 \textless Ponce   \textless 0.01 \\
+C & possible   & 0.01 \textless Ponce   \textless 0.1   \\
+D & probable   & 0.1 \textless Ponce   \textless 1      \\
+E & frequent   & Pseveral   = 1                         \\ \bottomrule
+\end{tabular}
+\end{table}

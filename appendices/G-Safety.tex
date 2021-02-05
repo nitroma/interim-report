@@ -48,7 +48,7 @@ Water               & 0   &  0    & 0   &               &                       
     \label{tab:my_label}
 
 \setlist{nosep}
-\begin{tabularx}{\linewidth}{p{3cm}Xccccccc}
+\begin{tabularx}{\linewidth}{p{4cm}Xccccccc}
 \toprule
                                                                                                                        \textbf{Hazard Description}  & \textbf{Consequences}                                                                                                                                                                                                                                                                                                                                                                          &  \textbf{Likelihood}                                     & \multicolumn{3}{c}{\textbf{Severity}}                                                                                                                                                                  & \multicolumn{3}{c}{\textbf{Risk}}                                                                                                                                                                       \\ \cmidrule(r){4-6}\cmidrule{7-9} 
                                                                                      &                                                                                                                                                                                                                                                                                                                                    &  & \rcell{People} & \rcell{Plant} & \rcell{Environment} & \rcell{People} & \rcell{Plant} & \rcell{Environment}\\ \midrule
@@ -63,16 +63,19 @@ Leakage of Toluene  from storage  or process line                            & \
 \end{landscape}
 
 
-\begin{table}[]
+\begin{table}[H]
+\centering
+\caption{}
+\label{}
 \begin{tabular}{cccccc}
 \toprule
 Severity & \multicolumn{5}{c}{Likelihood}                                                                                                                                    \\ \cmidrule{2-6} 
-  & A                              & B                              & C                              & D                              & E                              \\ \midrule
-5 & \yMe & \yMe & \rHi      & \rHi      & \rHi   \\ 
-4 & \yMe & \yMe & \rHi      & \rHi      & \rHi   \\ 
-3 & \yMe & \yMe & \yMe & \rHi      & \rHi   \\ 
-2 & \gLo     & \yMe & \yMe & \yMe & \rHi   \\ 
-1 & \gLo     & \gLo     & \gLo     & \gLo     & \yMe \\ \bottomrule
+    & A     & B     & C     & D     & E    \\ \midrule
+5   & \yMe  & \yMe  & \rHi  & \rHi  & \rHi \\ 
+4   & \yMe  & \yMe  & \rHi  & \rHi  & \rHi \\ 
+3   & \yMe  & \yMe  & \yMe  & \rHi  & \rHi \\ 
+2   & \gLo  & \yMe  & \yMe  & \yMe  & \rHi \\ 
+1   & \gLo  & \gLo  & \gLo  & \gLo  & \yMe \\ \bottomrule
 \end{tabular}
 \end{table}
 

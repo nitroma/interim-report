@@ -59,10 +59,10 @@
 \usepackage[hidelinks]{hyperref} % clickable links
     \newcommand{\email}[1]{\href{mailto:#1}{\texttt{#1}}}
 \usepackage{cleveref}   % clever cross-referencing
-\usepackage[titletoc]{appendix}
+% \usepackage[titletoc]{appendix}
 \usepackage[style=ieee]{biblatex} % references
     \addbibresource{zotero.bib}
-    % \renewcommand*{\bibfont}{\small}
+    \renewcommand*{\bibfont}{\small}
 
 \subtitle{Interim Design Report}
 \title{Continuous Nitration of Substituted Aromatics}
@@ -86,6 +86,7 @@
 
 \clearpage
 \appendix
+% \begin{appendices}
 \input{appendices/A-drawings.tex}
 \input{appendices/B-StreamTables}
 \input{appendices/C-DecisionMatrix}
@@ -93,5 +94,6 @@
 \input{appendices/E-ProcessAlternatives}
 \input{appendices/F-KineticsData}
 \input{appendices/G-Safety}
+% \end{appendices}
 
 \end{document}

@@ -49,7 +49,7 @@
     \begin{minipage}{0.65\textwidth}
         \raggedright\headingfont\bfseries
         \color{color2}\large\MakeUppercase{\@subtitle}\\
-        \color{color1}\huge\linespread{1.3}\@title\\[2ex]
+        \color{color1}\huge\linespread{1.3}\@title\\[3ex]
         \mdseries\rmfamily
         \color{color2}\normalsize\@author\\[1ex]
         \color{color2}\small\@date\\

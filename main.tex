@@ -67,6 +67,17 @@
     \renewcommand*{\bibfont}{\small}
 \usepackage{nomencl}
     \makenomenclature
+\usepackage{etoolbox}
+    \renewcommand\nomgroup[1]{%
+        \item[\bfseries
+        \ifstrequal{#1}{A}{Acronyms}{%
+        \ifstrequal{#1}{G}{General}{%
+        \ifstrequal{#1}{X}{Superscripts}{%
+        \ifstrequal{#1}{Z}{Subscripts}{%
+        }}}}% same number of closing brackets as lines above
+    ]\vspace{\parsep}}
+    \setlength{\nomitemsep}{0pt}
+    \renewcommand{\nompreamble}{\small}
 
 \subtitle{Interim Design Report}
 \title{Continuous Nitration of Substituted Aromatics}

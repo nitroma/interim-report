@@ -1,5 +1,5 @@
 % !TeX root = ../main.tex
-\section{Unit Sizing Sethodology}
+\section{Unit Sizing Methodology}
 \label{app:sizing}
 \subsection{Reactor Sizing}
 %Based on X paper, (include why reactors are PFR) (reference Levenspiel)
@@ -20,7 +20,7 @@ Packed bed reactors and microreactors are commonly assumed to model plug flow be
 
 2.  Catalysts are used in all of the reactors in the design. For more accurate sizing of the reactors, the deactivation of the catalyst should be reflected in the rate equation given by the deactivation function. The catalysts used in the reactors have a relatively long deactivation time [], so the deactivation of the catalysts is considered to be negligible at this stage. 
 
-\subsection{Separation Unit Sizing}
+\subsection{Separator Unit Sizing}
 
 \begin{table}[h]
 \centering
@@ -48,19 +48,19 @@ S602                                                      & \begin{tabular}[c]{@
 }
 \end{table}
 
-\noindent Summary of the key assumptions involved in sizing the separator units and their sources of reference are listed in Table \ref{tab:assumptions of sizing separator units}. 
+\noindent Summary of the key assumptions involved in sizing the separator units and their sources of reference are listed in Table \ref{tab:assumptions of sizing separator units}. The methodologies are detailed below.
 
-\paragraph{Sizing of crystallisers}
-The crystallisers in this design have been sized by scaling against a past example of falling-film crystalliser develped by Sulzer Brothers Ltd. According to Seader et al. 2011, \cite{seader_separation_2011} this equipment produces high-purity crystals at a capacity of 100,000 tons/yr; it consists of a pair of units 4 m in diameter and 12 m in height. By assuming in this design that the solid crystals are pure and no wetting occurs, we scaled the crystalliser by its solid production rate:
+\paragraph{Crystallisers}
+The crystallisers in this design have been sized by scaling against a past example of falling-film melt crystalliser develped by Sulzer Brothers Ltd. According to Seader et al. 2011, \cite{seader_separation_2011} this equipment produces high-purity crystals at a capacity of 100,000 tons/yr; it consists of a pair of units 4 m in diameter and 12 m in height. By assuming in this design that the solid crystals are pure and no wetting occurs, we scaled the crystalliser by its solid production rate:
 
 \begin{equation}
-    V = \frac{F_{crystal}}{10,000~ton/yr} \times 2 \times (2~m)^2 \pi \times 12~m
+    V = \frac{S}{10,000~ton/yr} \times 2 \times (2~m)^2 \pi \times 12~m
     \label{crystalliser_sizing}
 \end{equation}
 
-where $V$ is the volume of the crystalliser and $F_{crystal}$ is its solid production rate  in this design. 
+where $V$ is the volume of the crystalliser and $S$ the solid production rate in ton/yr. 
 
-\paragraph{Sizing of flash drums}
+\paragraph{Flash drums}
 According to Seader et al. 2011, \cite{seader_separation_2011} the minimum volume of a vertical reflux/flash drum is to be determined on the basis of liquid residence time; the liquid residence time should be at least 5 min and half of the vessel is assumed to be filled with liquid:
 
 \begin{equation}
@@ -68,4 +68,4 @@ According to Seader et al. 2011, \cite{seader_separation_2011} the minimum volum
     \label{flash_sizing}
 \end{equation}
 
-where $V$ is the volume of the flash drum, $L$ is the molar liquid flow rate leaving the vessel, 
+where $V$ is the volume of the flash drum, $L$ the molar liquid flow rate leaving the vessel, $M_L$ the average molecular weight of the liquid, $t$ the minimum residence time, and $\rho_L$ the average molar density of the liquid. 

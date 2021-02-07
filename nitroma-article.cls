@@ -28,9 +28,9 @@
 \titleformat{\subsection}{\color{color1}\large\bfseries\headingfont}{\thesubsection}{1em}{}
 \titleformat{\subsubsection}{\color{color1}\bfseries\headingfont}{\thesubsubsection}{1em}{}
 
-\titlespacing*{\section}{0pt}{*2}{*1}
+\titlespacing*{\section}{0pt}{*1}{*1}
 \titlespacing*{\subsection}{0pt}{*1}{*0}
-\titlespacing*{\subsubsection}{0pt}{*0.5}{*0}
+\titlespacing*{\subsubsection}{0pt}{*0}{*0}
 
 %\titlespacing{\subsection}{0pt}{*2}{*1} %please don't hate me Andreas!
 %\titlespacing{\subsubsection}{0pt}{*1}{*1}

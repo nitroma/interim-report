@@ -36,8 +36,10 @@ Agglomeration
 cobalt expensive
 
 \subsection{4-aminobenzaldehyde and 4-aminobenzoic acid hydrogenation reactor}
-\subsubsection{Formic acid as transfer hydrogen donor}
+\subsubsection{Direct Hydrogenation}
 $H_2$ gas has been heavily used in the industry as a hydrogena
+
+Direct hydrogenation of 4-nitrobenzaldehyde and 4-nitrobenzoic acid using $H_2$ was considered as an option as it is the m
 
 \subsection{Nitrotoluene Separation}
 \subsubsection{Jaksland Procedure for Ranking Separation Techniques}
@@ -45,7 +47,8 @@ The Jaksland procedure was chosen as a quantitative method of ranking separation
 
 Decanting was ruled out as an option because the organic molecules were very likely miscible with each other []. Although certain adsorbents have proved to be able to preferentially adsorb o-nitrotoluene and p-nitrotoluene, further purification steps would be required to desorb and separate the nitrotoluenes from the desorbent []. The available literature recommends using distillation to remove the desorbent, which seems to make adsorption a redundant step compared to direct distillation of the nitrotoluene isomers []. Absorption was also not considered as the solubility of the nitrotoluene isomers are likely to be similar across different types of solvents since the functional groups and molecular weights of the isomers are identical. Sedimentation was not considered as the maximum purity achievable is around 70\% []. Crystallisation and membrane technology were relatively new separation techniques that were considered. 
 
-The relevant property pair ratios were compared against the feasible and good bounds for each of the shortlisted techniques, which are tabulated in Table 
+The relevant property pair ratios were compared against the feasible and good bounds for each of the shortlisted techniques, which are tabulated in Table \ref{tab:separation pair ratio}. The \mu va
+
 
 \begin{table}[h]
 \centering
@@ -88,5 +91,19 @@ Leaching (Absorption)                                                         & 
 Sedimentation                                                                 & LS                            & Density                                        & \cellcolor[HTML]{F8CBAD}Max purity 70\%                                                   & \cellcolor[HTML]{F8CBAD}Max purity 70\%                                                             \\
 Filtration                                                                    & LS                            & Molecular Weight.                              &                                                                                           &                                                                                                     \\
 Centrifugation                                                                & LS                            & Density                                        &                                                                                           &                                                                                                     \\ \bottomrule
+\end{tabular}
+\end{table}
+
+
+\begin{table}[]
+\centering
+\caption{Pair ratios for each shortlisted separation technique. A technique for separating a particular pair of chemicals is good if the pair ratio exceeds the 'good' value, and infeasible if it does not exceed the 'feasible' value.}
+\label{tab:separation pair ratio}
+\begin{tabular}{@{}llllllll@{}}
+\toprule
+Technique  & Distillation & Distillation & Flash & Flash   & Crystallisation (melt) & Microfiltration & Microfiltration \\ \midrule
+Pair Ratio & r\_bp        & r\_vapP      & r\_bp & r\_vapP & r\_mp                  & r\_kd           & r\_mr           \\
+Feasible   & 1.01         & 1.05         & 1.23  & 10      & 1.2                    & 2               & 1.9             \\
+Good       & 1.02         & 1.5          & 1.4   & 15      & 1.27                   & 3               & 2.4             \\ \bottomrule
 \end{tabular}
 \end{table}

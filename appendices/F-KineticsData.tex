@@ -42,13 +42,13 @@
     \item Negligible production of toluene and aniline by-products.  
     \item The side-chain alkylation of ONT can be avoided, thus no nitrostyrene and nitroethylbenzene can be formed [].
     \item Kinetic parameters were obtained for a system free from mass transfer resistances and are thus the intrinsic rate of reaction.
-    \item The rate of reaction of ONT is 0.3 order with respect to hydrogen pressure \cite{rajadhyaksha_solvent_1986}
+    \item The rate of reaction of ONT is 0.3 order with respect to hydrogen pressure and depends on the mass of Pd/C catalyst \cite{rajadhyaksha_solvent_1986}:
     \begin{equation}
     - \frac{dC_{ONT}}{dt}=k \cdot P_{\ch{H2}}^{0.3} 
     \end{equation}
-    \item The rate constant, in \mol\per\kPa$^{3}$\g$_{cat}$\s, is valid for a reaction temperature range of 333-363K \cite{rajadhyaksha_solvent_1986}:
+    \item The rate constant, in \mol\per\kPa$^{0.3}$\g$_{cat}$\s, is valid for a reaction temperature range of 333-363K \cite{rajadhyaksha_solvent_1986}:
     \begin{equation}
-        k=1852e^{\frac{-45.52\cdot 10^{3}}{RT}}
+        k=211e^{\frac{-45.52\cdot 10^{3}}{RT}}
     \end{equation}
     \item The loss in activity of the catalyst is neglected.
 \end{itemize}
@@ -56,8 +56,19 @@
 \subsection{4-nitrotoluene oxidation}
 \paragraph{Assumptions}
 \begin{itemize}
+    \item Nitrotoluene follows the same reaction pathways as toluene \cite{wendt_reaction_1986}.
+    \item The stoichiometric reactions are as follow \cite{hoorn_modelling_2005}:
+    \begin{enumerate}
+        \item \ch{PNT +  O2 -> 4-NBH + H20}
+        \item \ch{PNT +  0.5 O2 -> 4-NBO}
+        \item \ch{4-NBH +  0.5 O2 -> 4-NBA}
+        \item \ch{4-NBO +  0.5 O2 -> 4-NBH + H2O}
+    \end{enumerate}
     \item 
 \end{itemize}
+
+\nomenclature[A]{4-NBO}{4-nitrobenzyl alcohol}
+
 
 \subsection{Reduction of 4-nitrobenzaldehyde and 4-nitrobenzoic acid}
 \paragraph{Assumptions}

@@ -11,14 +11,14 @@ All the reactors used in Nitroma's plant are assumed to have the same design equ
     \label{reactor_sizing}
 \end{equation}
 
-The plug flow behaviour is a common assumption for packed-bed reactors because of \cite{froment_chemical_nodate}
+The plug flow behaviour is a common assumption for packed-bed reactors, ignoring axial and radial dispersion \cite{froment_chemical_nodate}.
 
 [add trickle bed]
 \paragraph{}{Key assumptions}
  
 \indent 1.  Using the rate equation in the design equation accounts for intrinsic kinetics but not for mass transfer limitations when sizing the reactor. The effects of mass transfer limitations on the rate might be significant for the hydrogenation of ONT to o-toluidine as the rate is dependent on the catalyst. Including the effectiveness factor in the rate equation will provide a more accurate representation of the volume, but these limitations are not considered at this stage.
 
-2.  Catalysts are used in all of the reactors in the design. For more accurate sizing of the reactors, the deactivation of the catalyst should be reflected in the rate equation given by the deactivation function. The catalysts used in the reactors have a relatively long deactivation time [], so the deactivation of the catalysts is considered to be negligible at this stage. 
+2.  Catalysts are used in all of the reactors in the design. For more accurate sizing of the reactors, the deactivation of the catalyst should be reflected in the rate equation given by the deactivation function. The catalysts used in the reactors have a relatively long deactivation time \cite{temizel_novel_2020}, so the deactivation of the catalysts is considered to be negligible at this stage. 
 
 \subsection{Separator Unit Sizing}
 
@@ -53,14 +53,14 @@ S602                                                      & \begin{tabular}[c]{@
 Detailed methodologies for the sizing are as following:
 
 \paragraph{Distillation columns}
-The distillation columns have been designed following the method outlined in []. The diameter  of the tower, $D_t$, is designed to avoid entrainment flooding.
+The distillation columns have been designed following the method outlined in Seider et al. 2009. \cite{seider_product_2009} The diameter  of the tower, $D_t$, is designed to avoid entrainment flooding.
 
 \begin{equation}
     D_t = \left[\frac{4G}{(fU_f)\pi\left(1-\frac{A_d}{A_T}\right)\rho_g}\right]^\frac{1}{2}
     \label{crystalliser_sizing}
 \end{equation}
 
-where G is the vapor mass flowrate, $fU_f$ is the fraction of the flooding velocity
+\noindent where G is the vapor mass flowrate, $fU_f$ is the fraction of the flooding velocity
 
 \paragraph{Crystallisers}
 The crystallisers in this design have been sized by scaling against a past example of falling-film melt crystalliser develped by Sulzer Brothers Ltd. According to Seader et al. 2011, \cite{seader_separation_2011} this equipment produces high-purity crystals at a capacity of 100,000 tons/yr; it consists of a pair of units 4 m in diameter and 12 m in height. By assuming in this design that the solid crystals are pure and no wetting occurs, we scaled the crystalliser by its solid production rate as shown in Equation \ref{crystalliser_sizing} below:
@@ -70,7 +70,7 @@ The crystallisers in this design have been sized by scaling against a past examp
     \label{crystalliser_sizing}
 \end{equation}
 
-where $V$ is the volume of the crystalliser and $S$ is the solid production rate in \si{\tonne\per\year}.
+\noindent where $V$ is the volume of the crystalliser and $S$ is the solid production rate in \si{\tonne\per\year}.
 
 \paragraph{Flash drums}
 According to Seader et al. 2011, \cite{seader_separation_2011} the minimum volume of a vertical reflux/flash drum is to be determined on the basis of liquid residence time; the liquid residence time should be at least 5 min and half of the vessel is assumed to be filled with liquid. Thus, Equation \ref{flash_sizing} below can be used to estimate the volume of the flash drum:
@@ -80,4 +80,4 @@ According to Seader et al. 2011, \cite{seader_separation_2011} the minimum volum
     \label{flash_sizing}
 \end{equation}
 
-where $V$ is the volume of the flash drum, $L$ is the molar liquid flow rate leaving the vessel, $M_L$ is the average molecular weight of the liquid, $t$ is the minimum residence time, and $\rho_L$ is the average molar density of the liquid. 
+\noindent where $V$ is the volume of the flash drum, $L$ is the molar liquid flow rate leaving the vessel, $M_L$ is the average molecular weight of the liquid, $t$ is the minimum residence time, and $\rho_L$ is the average molar density of the liquid. 

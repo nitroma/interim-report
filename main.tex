@@ -64,7 +64,11 @@
 % \usepackage[titletoc]{appendix}
 \usepackage[style=chem-angew,maxnames=3]{biblatex} % references
     \addbibresource{zotero.bib}
-    \renewcommand*{\bibfont}{\small}
+    \renewcommand*{\bibfont}{\scriptsize}
+    \AtBeginBibliography{
+        \setlength{\itemsep}{0em}
+        \setlength{\parskip}{0em}
+    }
 \usepackage{nomencl}
     \makenomenclature
 \usepackage{etoolbox}
@@ -97,10 +101,13 @@
 \input{sections/6-conclusions.tex}
 
 \clearpage
+\twocolumn
 \printbibliography
-
 \clearpage
 \printnomenclature
+\onecolumn
+
+%you did the one column or did i break something?
 
 \clearpage
 \appendix

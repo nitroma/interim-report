@@ -3,7 +3,6 @@
 \label{app:sizing}
 \subsection{Reactor Sizing}
 %Based on X paper, (include why reactors are PFR) (reference Levenspiel)
-According to Froment/Bischoff, all 4 reactors chosen (packed-bed microreactor, trickle bed reactor, xxx, xxx) can be assumed to have the same \cite{froment_chemical_nodate}[tricklebed], which can be defined in the equation below:
 
 All the reactors used in Nitroma's plant are assumed to have the same design equation as a plug flow reactor, as shown in Equation \ref{reactor_sizing} below:
 
@@ -12,8 +11,9 @@ All the reactors used in Nitroma's plant are assumed to have the same design equ
     \label{reactor_sizing}
 \end{equation}
 
-Packed-bed reactors and microreactors are commonly assumed to model plug flow behaviour. 
+The plug flow behaviour is a common assumption for packed-bed reactors because of \cite{froment_chemical_nodate}
 
+[add trickle bed]
 \paragraph{}{Key assumptions}
  
 \indent 1.  Using the rate equation in the design equation accounts for intrinsic kinetics but not for mass transfer limitations when sizing the reactor. The effects of mass transfer limitations on the rate might be significant for the hydrogenation of ONT to o-toluidine as the rate is dependent on the catalyst. Including the effectiveness factor in the rate equation will provide a more accurate representation of the volume, but these limitations are not considered at this stage.
@@ -56,7 +56,7 @@ Detailed methodologies for the sizing are as following:
 The distillation columns have been designed following the method outlined in []. The diameter  of the tower, $D_t$, is designed to avoid entrainment flooding.  \ref{crystalliser_sizing} below:
 
 \begin{equation}
-    D_t = \frac{4G}{(fU_f)\pi(1-\frac{A_d}{A_T})\rho_g}
+    D_t = [\frac{4G}{(fU_f)\pi(1-\frac{A_d}{A_T})\rho_g}]^\frac{1}{2}
     \label{crystalliser_sizing}
 \end{equation}
 

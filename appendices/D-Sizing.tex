@@ -13,7 +13,7 @@ All the reactors used in Nitroma's plant are assumed to have the same design equ
 
 The plug flow behaviour is a common assumption for packed-bed reactors, ignoring axial and radial dispersion \cite{froment_chemical_nodate}. Similarly, studies have shown that  trickle bed reactor also behaves as an ideal plug flow reactor with no interphase and intraparticle gradients \cite{p_a_ramachandran_recent_1987} 
 
-\paragraph{Key assumptions} \\
+\paragraph{Key assumptions}
  
 \indent 1.  Using the rate equation in the design equation accounts for intrinsic kinetics but not for mass transfer limitations when sizing the reactor. The effects of mass transfer limitations on the rate might be significant for the hydrogenation of ONT to o-toluidine as the rate is dependent on the catalyst. Including the effectiveness factor in the rate equation will provide a more accurate representation of the volume, but these limitations are not considered at this stage.
 
@@ -56,10 +56,18 @@ The distillation columns have been designed following the method outlined in Sei
 
 \begin{equation}
     D_t = \left[\frac{4G}{(fU_f)\pi\left(1-\frac{A_d}{A_T}\right)\rho_g}\right]^\frac{1}{2}
-    \label{crystalliser_sizing}
+    \label{distill_dia_sizing}
 \end{equation}
 
 \noindent where G is the vapor mass flowrate, $fU_f$ is the fraction of the flooding velocity, $\frac{A_d}{A_T}$ is the ratio of downcomer area to the cross sectional area of the tower and $\rho_g$ is the mass density of the vapor.
+
+Column heights were calclated by using the rule that quoted in Douglas et al the height should be 20-30 times the diameter of the column, to prevent buckling under strong winds if too tall. 
+
+\begin{equation}
+    H_t = \left[\frac{4G}{(fU_f)\pi\left(1-\frac{A_d}{A_T}\right)\rho_g}\right]^\frac{1}{2}
+    \label{distill_height_sizing}
+\end{equation}
+
 
 \paragraph{Crystallisers}
 The crystallisers in this design have been sized by scaling against a past example of falling-film melt crystalliser develped by Sulzer Brothers Ltd. According to Seader et al. 2011, \cite{seader_separation_2011} this equipment produces high-purity crystals at a capacity of 100,000 tons/yr; it consists of a pair of units 4 m in diameter and 12 m in height. By assuming in this design that the solid crystals are pure and no wetting occurs, we scaled the crystalliser by its solid production rate as shown in Equation \ref{crystalliser_sizing} below:

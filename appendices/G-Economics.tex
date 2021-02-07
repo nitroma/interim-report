@@ -14,7 +14,7 @@ Early findings from a study of market prices of the chemicals used in Nitroma's 
     Material    & Price (\$/kg) & Reference \\ \midrule
     Toluene     & 0.62          & XX        \\
     Nitric acid & 0.31          & XX        \\
-    Hydrogen    & 0.034         & XX        \\
+    Hydrogen    & 0.03         & XX        \\
     Propanol    & 1.15          & XX        \\
     Formic acid & 0.36          & XX        \\ \bottomrule
 \end{tabular}
@@ -25,21 +25,27 @@ The economic potential of the plant was found using the following basic equation
 \begin{equation}
     \text{Economic potential} = \text{Revenue from products} - \text{Cost of raw materials}
 \end{equation}
+\begin{equation}
+    \text{Economic potential} = (\text{Mass flow rate of product X} \times \text{Price of product X}) - (\text{Mass flow rate of raw material Y} \times \text{Price of Y})
+\end{equation}
 \\
-From the Aspen simulation of the chemical plant, the following data was acquired:
+From the Aspen simulation of Nitroma'a chemical plant, the following data regarding the feed and product streams was acquired:
 
 \begin{table}[h] 
 \centering
 \caption{Flow rates}
 \label{tab:material-prices}
-\begin{tabular}{lll}
+\begin{tabular}{llll}
     \toprule
-    Material    & Price (\$/kg) & Reference \\ \midrule
-    Toluene     & 0.62          & XX        \\
-    Nitric acid & 0.31          & XX        \\
-    Hydrogen    & 0.034         & XX        \\
-    Propanol    & 1.15          & XX        \\
-    Formic acid & 0.36          & XX        \\ \bottomrule
+    Type    & Material      & Mass flow rate (\$/kg) & Volumetric flow rate \\ \midrule
+    Feed    & Toluene     & 0.62          & XX        \\
+    Feed    & Nitric acid & 0.31          & XX        \\
+    Feed    & Hydrogen    & 0.034         & XX        \\
+    Feed    & Propanol    & 1.15          & XX        \\
+    Feed    & Formic acid & 0.36          & XX        \\ 
+    Product & 4-ABH       & 0.36          & XX        \\
+    Product & 4-AB & 0.36          & XX        \\
+    Formic acid & 0.36          & XX        \\\bottomrule
 \end{tabular}
 \end{table}
 

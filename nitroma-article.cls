@@ -29,11 +29,9 @@
 \titleformat{\subsubsection}{\color{color1}\bfseries\headingfont}{\thesubsubsection}{1em}{}
 
 \titlespacing*{\section}{0pt}{*1}{*1}
-\titlespacing*{\subsection}{0pt}{*1}{*0}
-\titlespacing*{\subsubsection}{0pt}{*0}{*0}
-
-%\titlespacing{\subsection}{0pt}{*2}{*1} %please don't hate me Andreas!
-%\titlespacing{\subsubsection}{0pt}{*1}{*1}
+\titlespacing*{\subsection}{0pt}{2pt plus 4pt}{*0}
+\titlespacing*{\subsubsection}{0pt}{2pt plus 2pt}{*0}
+\titlespacing*{\paragraph} {0pt}{2pt plus 1ot minus 1pt}{1em}
 
 %%% TITLEPAGE
 \newcommand\subtitle[1]{\newcommand\@subtitle{#1}}

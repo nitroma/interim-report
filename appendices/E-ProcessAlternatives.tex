@@ -37,13 +37,13 @@ cobalt expensive
 
 \subsection{4-aminobenzaldehyde and 4-aminobenzoic acid hydrogenation reactor}
 \subsubsection{Formic acid as transfer hydrogen donor}
-$H_2$ gas has been heavily used in the industry as a hydrogenat
+$H_2$ gas has been heavily used in the industry as a hydrogena
 
 \subsection{Nitrotoluene Separation}
 \subsubsection{Jaksland Procedure for Ranking Separation Techniques}
 The Jaksland procedure was chosen as a quantitative method of ranking separation techniques because it is well established and does not require much computation once physical properties of the chemicals are known []. The property pair ratios for the compounds are calculated and are shown in Table \ref{tab:jaksland}. Separation across different phases such as vapour-vapour, vapour-liquid, liquid-liquid and liquid-solid were considered, as shown in Table [][][][][].
 
-\begin{table}[H]
+\begin{table}[h]
 \centering
 \caption{Property pair ratios for 2-nitrotoluene, 3-nitrotoluene, 4-nitrotoluene and toluene. critT = critical temperature (K), bp = boiling point (K), vapP = vapour pressure (kPa), mp = melting point (K), triple = triple point temperature (K), critP = critical pressure (kPa), solH2O = solubility in H2O (mg/mL), Hvap = heat of vapourisation (kJ/mol), mr = molecular weight (g/mol)}
 \label{tab:jaksland}\footnotesize
@@ -59,27 +59,30 @@ Ref & Pair              & r\_critT & r\_bp & r\_vapP & r\_mp & r\_triple & r\_cr
 \end{tabular}
 \end{table}
 
-\begin{table}[]
+Decanting was ruled out as an option because the organic molecules were very likely miscible with each other []. Although certain adsorbents have proved to be able to preferentially adsorb o-nitrotoluene and p-nitrotoluene, further purification steps would be required to desorb and separate the nitrotoluenes from the desorbent []. The available literature recommends using distillation to remove the desorbent, which seems to make adsorption a redundant step compared to direct distillation of the nitrotoluene isomers []. Absorption was dis
+
+\begin{table}[h]
+\centering
+\caption{Separation techniques considered for nitrotoluene isomer separation. Highlighted techniques were not considered in Jaksland analysis for the reasons stated.}
 \begin{tabular}{@{}
->{\columncolor[HTML]{FFFFFF}}c 
 >{\columncolor[HTML]{FFFFFF}}l 
 >{\columncolor[HTML]{FFFFFF}}c 
 >{\columncolor[HTML]{FFFFFF}}c 
 >{\columncolor[HTML]{FFFFFF}}l 
 >{\columncolor[HTML]{FFFFFF}}l @{}}
 \toprule
-{\color[HTML]{000000} Index} & \multicolumn{1}{c}{\cellcolor[HTML]{FFFFFF}{\color[HTML]{000000} Technology}} & {\color[HTML]{000000} Phases} & {\color[HTML]{000000} Key Property (relative)} & \multicolumn{1}{c}{\cellcolor[HTML]{FFFFFF}{\color[HTML]{000000} \textbf{Separate o-NT}}} & \multicolumn{1}{c}{\cellcolor[HTML]{FFFFFF}{\color[HTML]{000000} \textbf{Separate p-NT from m-NT}}} \\ \midrule
-1                            & Decanting                                                                     & LL                                      & Miscibility                                    & \cellcolor[HTML]{F8CBAD}Miscible organic phase                                            & \cellcolor[HTML]{F8CBAD}Miscible organic phase                                                      \\
-2                            & Flash                                                                         & LL                                      & Bp                                             &                                                                                           &                                                                                                     \\
-3                            & Distillation                                                                  & LL                                      & Bp                                             &                                                                                           &                                                                                                     \\
-4                            & Crystallisation                                                               & LL                                      & Mp                                             &                                                                                           &                                                                                                     \\
-5                            & Adsorption                                                                    & LL                                      & Adsorption Isotherm                            & \cellcolor[HTML]{F8CBAD}Requires further purification                                     & \cellcolor[HTML]{F8CBAD}Requires further purification                                               \\
-6                            & Absorption                                                                    & VV                                      & Solubility                                     & \cellcolor[HTML]{F8CBAD}Similar functional groups                                         & \cellcolor[HTML]{F8CBAD}Similar functional groups                                                   \\
-7                            & LLE (Absorption)                                                              & LL                                      & Solubility                                     & \cellcolor[HTML]{F8CBAD}Similar functional groups                                         & \cellcolor[HTML]{F8CBAD}Similar functional groups                                                   \\
-12                           & Membrane Separation                                                           & VV/LL                                   & Molecular Vol.                                 &                                                                                           &                                                                                                     \\
-8                            & Leaching (Absorption)                                                         & LS                                      & Solubility                                     & \cellcolor[HTML]{F8CBAD}Similar functional groups                                         & \cellcolor[HTML]{F8CBAD}Similar functional groups                                                   \\
-9                            & Sedimentation                                                                 & LS                                      & Density                                        & \cellcolor[HTML]{F8CBAD}Max purity 70\%                                                   & \cellcolor[HTML]{F8CBAD}Max purity 70\%                                                             \\
-10                           & Filtration                                                                    & LS                                      & Molecular Weight.                              &                                                                                           &                                                                                                     \\
-11                           & Centrifugation                                                                & LS                                      & Density                                        &                                                                                           &                                                                                                     \\ \bottomrule
+\multicolumn{1}{c}{\cellcolor[HTML]{FFFFFF}{\color[HTML]{000000} Technology}} & {\color[HTML]{000000} Phases} & {\color[HTML]{000000} Key Property (relative)} & \multicolumn{1}{c}{\cellcolor[HTML]{FFFFFF}{\color[HTML]{000000} \textbf{Separate o-NT}}} & \multicolumn{1}{c}{\cellcolor[HTML]{FFFFFF}{\color[HTML]{000000} \textbf{Separate p-NT from m-NT}}} \\ \midrule
+Decanting                                                                     & LL                            & Miscibility                                    & \cellcolor[HTML]{F8CBAD}Miscible organic phase                                            & \cellcolor[HTML]{F8CBAD}Miscible organic phase                                                      \\
+Flash                                                                         & LL                            & Bp                                             &                                                                                           &                                                                                                     \\
+Distillation                                                                  & LL                            & Bp                                             &                                                                                           &                                                                                                     \\
+Crystallisation                                                               & LL                            & Mp                                             &                                                                                           &                                                                                                     \\
+Adsorption                                                                    & LL                            & Adsorption Isotherm                            & \cellcolor[HTML]{F8CBAD}Requires further purification                                     & \cellcolor[HTML]{F8CBAD}Requires further purification                                               \\
+Absorption                                                                    & VV                            & Solubility                                     & \cellcolor[HTML]{F8CBAD}Similar functional groups                                         & \cellcolor[HTML]{F8CBAD}Similar functional groups                                                   \\
+LLE (Absorption)                                                              & LL                            & Solubility                                     & \cellcolor[HTML]{F8CBAD}Similar functional groups                                         & \cellcolor[HTML]{F8CBAD}Similar functional groups                                                   \\
+Membrane Separation                                                           & VV/LL                         & Molecular Vol.                                 &                                                                                           &                                                                                                     \\
+Leaching (Absorption)                                                         & LS                            & Solubility                                     & \cellcolor[HTML]{F8CBAD}Similar functional groups                                         & \cellcolor[HTML]{F8CBAD}Similar functional groups                                                   \\
+Sedimentation                                                                 & LS                            & Density                                        & \cellcolor[HTML]{F8CBAD}Max purity 70\%                                                   & \cellcolor[HTML]{F8CBAD}Max purity 70\%                                                             \\
+Filtration                                                                    & LS                            & Molecular Weight.                              &                                                                                           &                                                                                                     \\
+Centrifugation                                                                & LS                            & Density                                        &                                                                                           &                                                                                                     \\ \bottomrule
 \end{tabular}
 \end{table}

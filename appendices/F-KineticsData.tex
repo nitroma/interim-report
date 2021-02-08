@@ -44,9 +44,9 @@
     \item Kinetic parameters were obtained for a system free from mass transfer resistances and are thus the intrinsic rate of reaction.
     \item The rate of reaction of ONT is 0.3 order with respect to hydrogen pressure and depends on the mass of Pd/C catalyst \cite{rajadhyaksha_solvent_1986}:
     \begin{equation}
-    - \frac{\dd C_{ONT}}{\dd t}=k \cdot P_{\ch{H2}}^{0.3} 
+    - \frac{\dd C_\mathrm{ONT}}{\dd t}=k \cdot P_{\ch{H2}}^{0.3} 
     \end{equation}
-    \item The rate constant, in mol/(kPa$^{0.3}$g$_{cat}$s), is valid for a reaction temperature range of \SIrange{333}{363}{\K} \cite{rajadhyaksha_solvent_1986}:
+    \item The rate constant, in \si{\mol\per\kPa\tothe{0.3}\per\g\of{cat}\per\s}, is valid for a reaction temperature range of \SIrange{333}{363}{\K} \cite{rajadhyaksha_solvent_1986}:
     \begin{equation}
         k=211e^{\frac{-45.52\cdot 10^{3}}{RT}}
         \label{eqn:ONT_k}
@@ -58,13 +58,13 @@
 \paragraph{Assumptions}
 \begin{itemize}
     \item Nitrotoluene follows the same reaction pathways as toluene \cite{wendt_reaction_1986}.
-    \item The stoichiometric reactions are as follow \cite{hoorn_modelling_2005}:
-    \begin{enumerate}
-        \item \ch{PNT +  O2 -> NBH + H2O}
-        \item \ch{PNT +  0.5 O2 -> NBO}
-        \item \ch{NBH +  0.5 O2 -> NBA}
-        \item \ch{NBO +  0.5 O2 -> NBH + H2O}
-    \end{enumerate}
+    \item The stoichiometric reactions are as follows \cite{hoorn_modelling_2005}:
+    \begin{align}
+        \ch{PNT +      O2 &-> NBH + H2O} \\
+        \ch{PNT +  0.5 O2 &-> NBO} \\
+        \ch{NBH +  0.5 O2 &-> NBA} \\
+        \ch{NBO +  0.5 O2 &-> NBH + H2O}
+    \end{align}
     \item The reactivity of nitrotoluene and derivatives, and thus the reaction rates, are 5.6 times slower than for toluene \cite{partenheimer_methodology_1995}.
     \item Kinetic parameters were obtained for a system free from mass transfer resistances and thus when the reaction is kinetically controlled \cite{chandalia_kinetics_1999}. Hence we can safely assume that the intrinsic rate of reaction was measured.
     \item Reaction is independent of the oxygen partial pressure for high oxygen concentrations \cite{tan_kinetic_2010}.
@@ -86,7 +86,10 @@
 \subsection{Reduction of 4-nitrobenzaldehyde and 4-nitrobenzoic acid}
 \paragraph{Assumptions}
 \begin{itemize}
-    \item The stoichiometric reaction is \ch{R-NO2 +  formic~acid -> R-NH2 + CO2 + O2} \cite{gowda_catalytic_2000}.
+    \item The stoichiometric reaction is as follows \cite{gowda_catalytic_2000}:
+    \begin{equation}
+        \ch{R-NO2 +  !( formic~acid )( HCOOH ) -> R-NH2 + CO2 + O2}
+    \end{equation}
     \item \SI{86}{\percent} conversion of 4-NBA to 4-ABA is achieved in \SI{75}{\minute} \cite{gowda_catalytic_2000}.
      \item \SI{80}{\percent} conversion of 4-NBH to 4-ABH is achieved in \SI{120}{\minute} \cite{gowda_catalytic_2000}.
     \item The loss in activity of the catalyst is neglected.

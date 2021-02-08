@@ -30,11 +30,11 @@ Summary of the key assumptions involved in sizing the separator units and their 
 \begin{tabularx}{\linewidth}{llX}
 \toprule
 Type of separator & Tags  & Sizing assumptions and methodology    \\ \midrule
-Decanter      & S101  & Organic phase   is continuous; aqueous phase is dispersed    \textcite{ludwig_applied_1994}  \\ 
+Decanter      & S101  & Organic phase   is continuous; aqueous phase is dispersed    (\textcite{ludwig_applied_1994})  \\ 
 
 Distillation   column   & \splitcell{S102, S103,\\ S201, S302,\\ S303, S501,\\ S502, S503,\\ S602, S603} & Diameter of plate column estimated using methodology proposed in \textcite{seider_product_2009,seader_separation_2011}; height to diameter ratio designed to be 25 in accordance with \textcite{douglas_conceptual_1988} \\ 
-Crystalliser & S202, S401    & No wetting   (pure solid crystals); scaling by solid production rate from past example (Sulzer falling-film melt crystalliser)  \textcite{seader_separation_2011}  \\ 
-Flash drum     & S301, S501    & Minimum   residence time of liquid phase is 5min; vessel half-filled with liquid \textcite{seader_separation_2011} \\ \bottomrule
+Crystalliser & S202, S401    & No wetting   (pure solid crystals); scaling by solid production rate from past example (Sulzer falling-film melt crystalliser)  (\textcite{seader_separation_2011})  \\ 
+Flash drum     & S301, S501    & Minimum   residence time of liquid phase is 5min; vessel half-filled with liquid (\textcite{seader_separation_2011}) \\ \bottomrule
 \end{tabularx}%
 
 \end{table}
@@ -71,7 +71,7 @@ The size of the decanter was based on the time required for separation, assuming
     t = \left[\frac{100\mu}{(\rho_A - \rho_B)}\right]
     \label{eqn:decanter_time_sizing}
 \end{equation}
-where $t$ ($h$) is separation time, $\mu$ ($cP$) is viscosity of the continuous phase, $\rho_A$ and $\rho_B$ ($kgm^{-3}$) are the densities of the liquid A and B to be separated. 
+where $t$ ($h$) is separation time, $\mu$ ($cP$) is viscosity of the continuous phase, and $\rho_A$ and $\rho_B$ ($kgm^{-3}$) are the densities of the liquids A and B to be separated. 
 \begin{equation}
     \text{V} = \left[\frac{(V_A + V_B)t}{0.95}\right] 
     \label{eqn:decanter_vol_sizing}
@@ -79,9 +79,9 @@ where $t$ ($h$) is separation time, $\mu$ ($cP$) is viscosity of the continuous 
 Equation \ref{eqn:decanter_vol_sizing} was used to determine the volume of the decanter, V (\si{\cubic\m}), where $V_A$ and $V_B$ (\si{\cubic\m\per\s})  are the volumetric flowrate of the liquids. 
 
 \paragraph{Distillation columns}
-The distillation columns have been designed following the method outlined in \textcite{seider_product_2009}.
+The distillation columns have been designed following the method outlined in \textcite{seider_product_2009,seader_separation_2011}.
 \begin{equation}
-    D_t = \left[\frac{4G}{(fU_f)\pi\left(1-\frac{A_d}{A_T}\right)\rho_g}\right]^\frac{1}{2}
+    D_t = \left[\frac{4G}{\left(fU_f\right)\pi\left(1-\frac{A_d}{A_T}\right)\rho_g}\right]^\frac{1}{2}
     \label{distill_dia_sizing}
 \end{equation}
 where G is the vapour mass flowrate, $fU_f$ is the fraction of the flooding velocity, $\frac{A_d}{A_T}$ is the ratio of downcomer area to the cross sectional area of the tower and $\rho_g$ is the mass density of the vapour. Column heights were calculated by using a general rule quoted in \textcite{douglas_conceptual_1988} that the height should be 20-30 times the diameter of the column, to prevent buckling under strong winds if too tall, so a ratio of 25 was taken. 

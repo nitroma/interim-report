@@ -32,7 +32,7 @@ The consistency index (CI) is calculated for the number of criteria $n$:
    \mathrm{CI} = \frac{\lambda_{max}-n}{n-1}
 \end{equation}
 The consistency ratio CI/RI is then calculated using the Random Consistency Index (RI) retrieved from (Saaty, 1987). 
-For product selection, $\lambda_{max}$=3.036, CI=0.018 and RI=0.58, hence the consistency ratio is worth 0.03. Weightings are deemed consistent if the ratio is less than 10\%.
+For product selection, $\lambda_{max}$=3.036, CI=0.018 and RI=0.58, hence the consistency ratio is worth 0.03. Weightings are deemed consistent if the ratio is less than \SI{10}{\percent}.
 
 \paragraph{3. AHP score calculation}
 The score for a given alternative is calculated by summing, over all criteria, the normalised score multiplied by the criteria weighting:
@@ -70,7 +70,7 @@ Finally the performance score is the ratio between the Euclidian distance from t
     \label{tab:nitration}\footnotesize
 \begin{tabular}{l|S[table-format=2.3]S[table-format=1.2]|S[table-format=2.0]|lll|S[table-format=1.3]S[table-format=1.3]c}
 \toprule
-                                          & \multicolumn{2}{c|}{Economic potential   (14\%)}                                & {Performance (57\%)} & \multicolumn{3}{c|}{EHS (29\%)}     &                       &                          &                           \\ \cmidrule{2-7}
+                                          & \multicolumn{2}{c|}{Economic potential   (\SI{14}{\percent})}                                & {Performance (\SI{57}{\percent})} & \multicolumn{3}{c|}{EHS (\SI{29}{\percent})}     &                       &                          &                           \\ \cmidrule{2-7}
                                           & {\splitcell{Price\\(\si{\EUR\per\g})}} & {\splitcell{By-products\\(\%)}} & {Conversion (\%)}  & \rotatebox[origin=r]{90}{Health} & \rotatebox[origin=r]{90}{Flammability} & \rotatebox[origin=r]{90}{Instability} & AHP & TOPSIS & Rank \\ \midrule
 H-ZSM-5 & 0.734        & 0.5 & 41                             & 2       &  0          &     0       & 0.297                 & 0.752                & 2                         \\ 
 H-Y & 0.696            & 0.48 & 36                           & 2      &        0     & 0           & 0.276                 & 0.705                   & 3 \\ 
@@ -90,7 +90,7 @@ No catalyst         & 0            & 0 & 2                         & 0      & 0 
     \label{tab:solvent}\footnotesize
 \begin{tabularx}{\linewidth}{l|X|S[table-format=2.2]S[table-format=1.2]S[table-format=1.3]|ll|llll|S[table-format=1.3]S[table-format=1.3]c}
 \toprule
-                                          & Economic potential   (11\%)                                & \multicolumn{3}{c|}{Performance (24\%)} & \multicolumn{2}{c|}{\splitcell{Safety\\ (52\%)}}     & \multicolumn{4}{c|}{Sustainability (13\%)}                        &                          &                           \\ \cmidrule{2-11}
+                                          & Economic potential   (\SI{11}{\percent})                                & \multicolumn{3}{c|}{Performance (\SI{24}{\percent})} & \multicolumn{2}{c|}{\splitcell{Safety\\ (\SI{52}{\percent})}}     & \multicolumn{4}{c|}{Sustainability (\SI{13}{\percent})}                        &                          &                           \\ \cmidrule{2-11}
                                           & \splitcell{Price\\ (\si{\GBP\per\L})} & {\splitcell{Activation\\ energy\\ (\si{\kJ\per\mol})}} & {\splitcell{Reaction\\ rate\\  (\si{\mol\per\s})}}  & {\splitcell{\ch{H2} solubility\\ (\si{\mL\of{\ch{H2}}\per\mL\of{solution}})}}& \rotatebox[origin=r]{90}{Health} & \rotatebox[origin=r]{90}{Flammability} & \rotatebox[origin=r]{90}{Renewability} & \rotatebox[origin=r]{90}{Environment} & \rotatebox[origin=r]{90}{Waste} & \rotatebox[origin=r]{90}{LCA} & AHP & TOPSIS & Rank \\ \midrule
 Methanol & 28.6       & 34.36 & 2.14     & 0.809       &  5          &     5      & 3 & 9 & 4 & 9 & 0.212                 & 0.531                & 2                        \\ 
 Propanol & 39           & 45.52 & 1.34  & 0.825     &        6     & 8           & 2 & 9 & 3 & 4 & 0.213                 & 0.707                   & \cellcolor{green}1 \\ 
@@ -112,7 +112,7 @@ Hexane     & 60           & 66.21 & 1.29      &   1.981    & 2            & 4 & 
 \begin{tabular}{l|ll|lll|ll|lll|l|l|llc}
 %S[table-format=2.2]S[table-format=1.2]S[table-format=1.3]
 \toprule
-                                          & \multicolumn{2}{c|}{\splitcell{Supply chain\\ (34\%)}}                               & \multicolumn{3}{c|}{\splitcell{Country economics\\ (17\%)}} & \multicolumn{2}{c|}{\splitcell{Trade\\ (4\%)}}     & \multicolumn{3}{c|}{Operating costs (28\%)}   & \splitcell{Competitive\\ Landscape (9\%)} & \splitcell{Political\\ stability (7\%)}  &     &                      \\ \cmidrule{2-13}
+                                          & \multicolumn{2}{c|}{\splitcell{Supply chain\\ (\SI{34}{\percent})}}                               & \multicolumn{3}{c|}{\splitcell{Country economics\\ (\SI{17}{\percent})}} & \multicolumn{2}{c|}{\splitcell{Trade\\ (\SI{4}{\percent})}}     & \multicolumn{3}{c|}{Operating costs (\SI{28}{\percent})}   & \splitcell{Competitive\\ Landscape (\SI{9}{\percent})} & \splitcell{Political\\ stability (\SI{7}{\percent})}  &     &                      \\ \cmidrule{2-13}
                                           
                                       & {\rcell{Local toluene production (\si{\tonne\per\year})}} & {\rcell{Industry size of products (\si[prefixes-as-symbols=false]{\giga\USD})}} & \rtext{Interest rate (\%)}  & \rcell{Corporate tax rate (\%)} & \rtext{Inflation (\%)} & \rtext{Import duties (\%)} & \rtext{Export duties (\%)} & {\rcell{Electricity cost (\si{\USD\per\kWh})}} & {\rcell{Minimum wage (\si{\USD\per\hour})}} & {\rcell{Cooling water cost (\si{\USD\per\l})}} &  {\rcell{Number competitors}} & {\rcell{Corruption perception index}} & AHP & TOPSIS & Rank \\ \midrule
 India & 1       & 20 & 4     & 7.35       &  7.35          &     4.9      & 7.5 & 0.08 & 1.00 & 0.2 & 2                 & 41                & 0.193 & 0.536 &    3              \\ 

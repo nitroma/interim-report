@@ -26,34 +26,37 @@ The economic potential of the plant was found using the following basic equation
     \text{Economic potential} = \text{Revenue from products} - \text{Cost of raw materials}
 \end{equation}
 \begin{equation}
-    \text{Revenue from products = \text{Mass flow rate of product X} \times \text{Price of product X})
+    \text{Revenue from products} = \displaystyle\sum_{i=1}^{3} \text{Mass flow rate of product X} \cdot \text{Price of product X}
+\end{equation}
+\begin{equation}
+    \text{Cost of raw materials} = \displaystyle\sum_{i=1}^{5} \text{Mass flow rate of feed X} \cdot \text{Price of feed X}
 \end{equation}
 \\
 From the Aspen simulation of Nitroma'a chemical plant, the following data regarding the feed and product streams was acquired:
 
 \begin{table}[h] 
 \centering
-\caption{klow rates}
-\label{tab:material-prices}
+\caption{Feed and product flow rates}
+\label{tab:costing-flows}
 \begin{tabular}{lll}
     \toprule
     Stream type    & Material    & Mass flow rate (\$/kg) \\\midrule
 %    & Stream type    & Material    & \multicolumn{2}{c|}{Mass flow rate (\$/kg)}    \\\midrule
 %    & \splitcell{-} & \splitcell{-} & {\splitcell{ABH scenario} & \splitcell{ABA scenario}}\\\midrule
-    Feed     & Toluene     & 0.62                     \\
-    Feed    & Nitric acid & 0.31                      \\
-    Feed    & Hydrogen    & 0.034                     \\
-    Feed    & Propanol    & 1.15                      \\
-    Feed    & Formic acid & 0.36                      \\ 
-    Product & 4-ABH       & 0.36                      \\
-    Product & 4-ABA       & 0.36                      \\
-    Product & o-TOL       & 0.36                      \\\bottomrule
+    Feed 1     & Toluene     & 0.62                     \\
+    Feed 2     & Nitric acid & 0.31                      \\
+    Feed 3     & Hydrogen    & 0.034                     \\
+    Feed 4     & Propanol    & 1.15                      \\
+    Feed 5     & Formic acid & 0.36                      \\ 
+    Product 1  & 4-ABH       & 0.36                      \\
+    Product 2  & 4-ABA       & 0.36                      \\
+    Product 3  & o-TOL       & 0.36                      \\\bottomrule
 \end{tabular}
 \end{table}
 
 \subsection{Capital cost estimation}
 
-Bridgewater's method outlined in Principles, Practices and Economics of Plant Design is used to estimate the capital cost of the chemical plant (XX).\\
+Bridgewater's method outlined in Principles, Practices and Economics of Plant Design is used to estimate the capital cost of the chemical plant (XX). This uses the following equation:
 \begin{equation}
     C= \num{280000} \times N \times \left(\frac{Q}{s}\right)^{0.3}
 \end{equation}
@@ -64,7 +67,7 @@ The calculation was first carried out for the BA scenario.
 C &= \num{280000} \times 15 \times \left(\frac{837.32}{0.27}\right)^{0.3}  \\
   &= \$46.9m 
 \end{align*}
- \\
+
 The calculation was then carried out for the BH scenario.
 \begin{align*}
 C &= 280000 \times 17 \times \left(\frac{1208.69}{0.94}\right)^{0.3}  \\

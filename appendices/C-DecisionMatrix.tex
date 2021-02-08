@@ -13,7 +13,7 @@ The scale developed by Saaty was adopted to assess the relative importance of on
 \label{tab:pairwise}
 \begin{tabularx}{\linewidth}{l|XXX|l}
 \toprule
-                                                                & Economic potential & Process complexity & \splitcell{Environmental\\ and safety} & Weights \\ \midrule
+                                                                & Economic potential & Process complexity & Environmental and safety & Weights \\ \midrule
 Economic potential                        & 1.000              & 3.000              & 0.333                    & 0.286   \\
 Process complexity                      & 0.333              & 1.000              & 0.333                    & 0.14    \\
 Environmental and   safety & 3.000              & 3.000              & 1.000                    & 0.574   \\ \midrule
@@ -32,7 +32,7 @@ The consistency index (CI) is calculated for the number of criteria $n$:
    \mathrm{CI} = \frac{\lambda_{max}-n}{n-1}
 \end{equation}
 The consistency ratio CI/RI is then calculated using the Random Consistency Index (RI) retrieved from (Saaty, 1987). 
-For product selection, $\lambda_{max}$=3.036, CI=0.018 and RI=0.58, hence the consistency ratio is worth 0.03. Weightings are deemed consistent if the ratio is less than \SI{10}{\percent}.
+For product selection, $\lambda_{max}=3.036$, $\mathrm{CI}=0.018$ and $\mathrm{RI}=0.58$, hence the consistency ratio is 0.03. Weightings are deemed consistent if the ratio is less than \SI{10}{\percent}.
 
 \paragraph{3. AHP score calculation}
 The score for a given alternative is calculated by summing, over all criteria, the normalised score multiplied by the criteria weighting:
@@ -41,14 +41,14 @@ The score for a given alternative is calculated by summing, over all criteria, t
 \end{equation}
 
 \paragraph{4. Weighted Normalised Matrix for TOPSIS}
-Similarly to AHP analysis, a $n\times k$ matrix is constructed for $n$ criteria and $k$ alternatives. The criterion $X_{ij}$ are normalised and multiplied by their respective weighting $w_i$ as follows:
+Similarly to AHP analysis, a $n\times k$ matrix is constructed for $n$ criteria and $k$ alternatives. The criteria $X_{ij}$ are normalised and multiplied by their respective weighting $w_i$ as follows:
 \begin{align}
     \tilde{X}_{ij}&=\frac{X_{ij}}{\sqrt{\sum^{n}_{i=1}X_{ij}^{2}}} &
     V_{ij}&=\tilde{X}_{ij}\times w_j
 \end{align}
 
 \paragraph{5. Calculation of Euclidean distance from ideal best and ideal worst}
-The ideal best and ideal worst are the maximum and mimnim values for each criterion. The distance of each criterion to the ideal best ($V_{j}^{+}$) and ideal worst ($V_{j}^{-}$) values is calculated as follows:
+The ideal best ($V_{j}^{+}$) and ideal worst ($V_{j}^{-}$) are the maximum and minimum values for each criterion. The distance from the ideal best and ideal worst values is calculated as follows:
 \begin{align}
     S_{i}^{+}&=\sqrt{\sum_{j=1}^{n}(V_{ij}-V_{j}^{+})^2} &
     S_{i}^{-}&=\sqrt{\sum_{j=1}^{n}(V_{ij}-V_{j}^{-})^2}
@@ -63,8 +63,7 @@ Finally the performance score is the ratio between the Euclidian distance from t
 
 
 \subsection{Nitration Catalyst Selection}
-
-\begin{table}[h]
+\begin{table}[H]
 \centering
     \caption{AHP/TOPSIS results for Nitration Catalyst Selection}
     \label{tab:nitration}\footnotesize

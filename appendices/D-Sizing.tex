@@ -27,7 +27,7 @@ Summary of the key assumptions involved in sizing the separator units and their 
 \begin{tabularx}{\linewidth}{llXl}
 \toprule
 Tag  & Type                 & Assumptions used in sizing                                                                                                                                      & Source                                             \\ \midrule
-S101 & Decanter             & Aqueous phase is continuous; organic phase is dispersed                                                                                                         & \cite{ludwig_applied_1994}                         \\
+S101 & Decanter             & Organic phase is continuous; aqueous phase is dispersed                                                                                                         & \cite{ludwig_applied_1994}                         \\
 S102 & Distillation column  & Diameter of plate column estimated using methodology proposed in Seider et al. 2009; height to diameter ratio designed to be 25 in accordance with Douglas 1988 & \cite{seider_product_2009,douglas_conceptual_1988} \\
 S103 & Distillation column  & Diameter of plate column estimated using methodology proposed in Seider et al. 2009; height to diameter ratio designed to be 25 in accordance with Douglas 1988 & \cite{seider_product_2009,douglas_conceptual_1988} \\
 S201 & Distillation column  & Diameter of plate column estimated using methodology proposed in Seider et al. 2009; height to diameter ratio designed to be 25 in accordance with Douglas 1988 & \cite{seider_product_2009,douglas_conceptual_1988} \\
@@ -47,7 +47,7 @@ S602 & Distillation  column & Diameter of plate column estimated using methodolo
 \noindent Detailed methodologies for the sizing are as following:
 
 \paragraph{Decanter}
- The size of the decanter was based on the time required for separation. 
+The size of the decanter was based on the time required for separation, assuming liquids are clean and do not form emulsions.  
 \begin{equation}
     t = \left[\frac{100\mu}{(\rho_A - \rho_B)}\right]
     \label{decanter_time_sizing}
@@ -57,7 +57,7 @@ where t is separation time, $\mu$ is viscosity of the continuous phase, $\rho_A$
     \text{Total liquid hold up} = (V_A + V_B)t
     \label{decanter_holdup_sizing}
 \end{equation}
-where $V_A$ and $V_B$ are the volumetric flowrate of the liquids. The vessel should be 95 \% full, from this the volume of the decanter was determined. 
+where $V_A$ and $V_B$ are the volumetric flowrate of the liquids. The vessel should be 95 \% full, based on this the volume of the decanter was determined. 
 
 \paragraph{Distillation columns}
 The distillation columns have been designed following the method outlined in \textcite{seider_product_2009}.

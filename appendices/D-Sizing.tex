@@ -52,15 +52,15 @@ The distillation columns have been designed following the method outlined in \te
     D_t = \left[\frac{4G}{(fU_f)\pi\left(1-\frac{A_d}{A_T}\right)\rho_g}\right]^\frac{1}{2}
     \label{distill_dia_sizing}
 \end{equation}
-where G is the vapour mass flowrate, $fU_f$ is the fraction of the flooding velocity, $\frac{A_d}{A_T}$ is the ratio of downcomer area to the cross sectional area of the tower and $\rho_g$ is the mass density of the vapour.
-Column heights were calculated by using a general rule quoted in \textcite{douglas_conceptual_1988} that the height should be 20-30 times the diameter of the column, to prevent buckling under strong winds if too tall so a ratio of 25 was taken. 
+where G is the vapour mass flowrate, $fU_f$ is the fraction of the flooding velocity, $\frac{A_d}{A_T}$ is the ratio of downcomer area to the cross sectional area of the tower and $\rho_g$ is the mass density of the vapour. Column heights were calculated by using a general rule quoted in \textcite{douglas_conceptual_1988} that the height should be 20-30 times the diameter of the column, to prevent buckling under strong winds if too tall, so a ratio of 25 was taken. 
+
 \begin{equation}
     H_t = 25D_t
     \label{distill_height_sizing}
 \end{equation}
 
 \paragraph{Crystallisers}
-The crystallisers in this design have been sized by scaling against a past example of falling-film melt crystalliser develped by Sulzer Brothers Ltd. According to \textcite{seader_separation_2011} this equipment produces high-purity crystals at a capacity of \SI{100000}{\tonne\per\year}; it consists of a pair of units \SI{4}{\m} in diameter and \SI{12}{\m} in height. By assuming in this design that the solid crystals are pure and no wetting occurs, we scaled the crystalliser by its solid production rate as shown in Equation \ref{crystalliser_sizing} below:
+The crystallisers in this design have been sized by scaling against a past example of falling-film melt crystalliser develped by Sulzer Brothers Ltd. According to \textcite{seader_separation_2011} this equipment produces high-purity crystals at a capacity of \SI{100000}{\tonne\per\year}; it consists of a pair of units \SI{4}{\m} in diameter and \SI{12}{\m} in height. By assuming in this design that the solid crystals are pure and no wetting occurs, the crystalliser can be scaled by its solid production rate as shown in Equation \ref{crystalliser_sizing} below:
 \begin{equation}
     V = \frac{S}{\SI{10000}{\tonne\per\year}} \times 2~((\frac{4}{2}~m)^2 \pi \times 12~m)
     \label{crystalliser_sizing}

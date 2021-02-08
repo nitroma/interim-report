@@ -113,14 +113,19 @@ Good       & 1.02         & 1.5          & 1.4   & 15      & 1.27               
 \centering
 \caption{$\mu$ values for each shortlisted technique.}
 \label{tab:separation-mu}
-\begin{tabular}{llllllll}
+\begin{tabular}{@{}llllll@{}}
 \toprule
-Technique  & Distillation   & Distillation     & Flash          & Flash            & Crystallisation (melt) & Microfiltration & Microfiltration \\ \midrule
-Pair Ratio & \texttt{r\_bp} & \texttt{r\_vapP} & \texttt{r\_bp} & \texttt{r\_vapP} & \texttt{r\_mp}         & \texttt{r\_kd}  & \texttt{r\_mr}  \\
-Feasible   & 1.01           & 1.05             & 1.23           & 10               & 1.2                    & 2               & 1.9             \\
-Good       & 1.02           & 1.5              & 1.4            & 15               & 1.27                   & 3               & 2.4             \\ \bottomrule
+Pair              & Distillation                 & Distillation                    & Flash      & Flash      & Crystallisation (melt) \\ \midrule
+2-nitro / 4-nitro & 2.23                         & \cellcolor[HTML]{C6E0B4}37.88   & Infeasible & 1.62       & 0.11                   \\
+2-nitro / 3-nitro & 0.89                         & \cellcolor[HTML]{C6E0B4}45.42   & Infeasible & 2.30       & Infeasible             \\
+4-nitro / 3-nitro & \cellcolor[HTML]{C6E0B4}0.32 & 0.31                            & Infeasible & Infeasible & Infeasible             \\
+2-nitro / tol     & 27.97                        & \cellcolor[HTML]{C6E0B4}6665.48 & 0.35       & 598.10     & 4.43                   \\
+4-nitro / tol     & 32.14                        & \cellcolor[HTML]{C6E0B4}366.12  & 0.60       & 31.16      & 8.90                   \\
+3-nitro / tol     & 30.41                        & \cellcolor[HTML]{C6E0B4}307.95  & 0.49       & 25.93      & 6.00                   \\ \bottomrule
 \end{tabular}
 \end{table}
+
+
 \end{landscape}
 
 

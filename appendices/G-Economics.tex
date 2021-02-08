@@ -22,24 +22,20 @@ Early findings from a study of market prices of the chemicals used in Nitroma's 
 
 \subsection{Economic potential: Level 1}
 The economic potential of the plant was found using the following basic equations:
-\begin{equation}
-    \text{Economic potential} = \text{Revenue from products} - \text{Cost of raw materials}
-\end{equation}
-\begin{equation}
-    \text{Revenue from products} = \displaystyle\sum_{i=1}^{3} \text{Mass flow rate of product X} \cdot \text{Price of product X}
-\end{equation}
-\begin{equation}
-    \text{Cost of raw materials} = \displaystyle\sum_{i=1}^{5} \text{Mass flow rate of feed X} \cdot \text{Price of feed X}
-\end{equation}
+\begin{align}
+    \text{Economic potential} &= \text{Revenue from products} - \text{Cost of raw materials} \label{eq:ep1}\\
+    \text{Revenue from products} &= \displaystyle\sum_{i=1}^{3} \text{Mass flow rate of product X} \cdot \text{Price of product X} \label{eq:ep1-revenue}\\
+    \text{Cost of raw materials} &= \displaystyle\sum_{i=1}^{5} \text{Mass flow rate of feed X} \cdot \text{Price of feed X} \label{eq:ep1-cost}
+\end{align}
 \\
-From the Aspen simulation of Nitroma'a chemical plant, the following data regarding the feed and product streams was acquired:
+From the Aspen simulation of Nitroma's chemical plant, the following data regarding the feed and product streams was acquired:
 \begin{table}[h] 
 \centering
 \caption{Feed and product flow rates}
 \label{tab:costing-flows}
 \begin{tabular}{lll}
     \toprule
-    Stream type    & Material    & Mass flow rate (kg yr^{-1}) \\\midrule
+    Stream type    & Material    & Mass flow rate (\si{\kg\per\year}) \\\midrule
 %    & Stream type    & Material    & \multicolumn{2}{c|}{Mass flow rate (\$/kg)}    \\\midrule
 %    & \splitcell{-} & \splitcell{-} & {\splitcell{ABH scenario} & \splitcell{ABA scenario}}\\\midrule
     Feed 1     & Toluene     & 1,256,220.56                    \\
@@ -54,7 +50,7 @@ From the Aspen simulation of Nitroma'a chemical plant, the following data regard
 \end{table}
 \\
 
-Subsisting values from \cref{tab:material-prices} and \cref{tab:costing-flows} into Equations G.1, G.2 and G.3 yields and economic potential of \$12.0m per year for the ABH scenario and \$5.2m per year for the ABA scenario.
+Substituting values from \cref{tab:material-prices,tab:costing-flows} into \cref{eq:ep1,eq:ep1-revenue,eq:ep1-cost} yields an economic potential of \$5.2m per year for the ABA scenario and \$12.0m per year for the ABH scenario. The percentage of the plant's annual running time under each scenario can vary from 0-100\%, as long as the sum of running time of each scenario adds up to 8000 hours, o meaning
 
 \subsection{Capital cost estimation}
 

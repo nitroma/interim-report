@@ -142,10 +142,10 @@ Severity & \multicolumn{5}{c}{Likelihood}                                       
 \label{tab:severity-methodology}
 \begin{tabularx}{\linewidth}{llXXX}
 \toprule
-\multicolumn{2}{l}{\textbf{Severity}} & \textbf{To the People}                                     & \textbf{To the Plant}      & \textbf{To the Environemnt}      \\ \midrule
+\multicolumn{2}{l}{\textbf{Severity}} & \textbf{To the People}                                     & \textbf{To the Plant}      & \textbf{To the Environment}      \\ \midrule
 1          & Minor             & First Aid                                                  & Superficial Damage         & Slight/no effect                 \\
 2          & Moderate          & Medical Care                                               & Repair Needed              & Minor effect                     \\
-3          & Serious           & Disabling, Fracture, Hospitalisation (\textgreater{}24hrs) & Loss of a Process Item     & Short-term Localised Damage      \\
+3          & Serious           & Disabling, Fracture, Hospitalisation (\SI{>24}{\hour})     & Loss of a Process Item     & Short-term Localised Damage      \\
 4          & Very Serious      & One Fatality                                               & Local Destruction of Plant & Major/long-term Localised Effect \\
 5          & Severe            & Several Fatalitie                                          & Complete Destruction       & Multiple Environments Affected   \\ \bottomrule
 \end{tabularx}
@@ -217,9 +217,9 @@ Degree of Hazard                                                                
 \centering
 \caption{Waste Discharge Threshold Limits }
 \label{tab:waste}
-\begin{tabular}{@{}ll@{}}
+\begin{tabular}{lS[table-format=3.1]}
 \toprule
-\multicolumn{1}{c}{Waste Category} & \multicolumn{1}{c}{\begin{tabular}[c]{@{}c@{}}Emission Threshold Limit \cite{european_commission_joint_research_centre_best_2018} \cite{govuk_waste_nodate}\\  (mg/l)\end{tabular}} \\ \midrule
+Waste Category & {\splitcell{Emission Threshold Limit\\ (\si{\mg\per\l}) \cite{european_commission_joint_research_centre_best_2018,govuk_waste_nodate}}} \\ \midrule
 Biological Oxygen Demand           & 50                                                                                             \\
 Chemical Oxygen Demand             & 250                                                                                            \\
 Total Nitrogen                     & 15                                                                                             \\

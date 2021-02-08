@@ -1,8 +1,8 @@
 % !TeX root = ../main.tex
-\section{Decision Analysis}
+\section{Decision analysis}
 \label{app:matrix}
 
-\subsection{Sample AHP and TOPSIS Calculation for Product Selection}
+\subsection{Sample AHP and TOPSIS calculation for product selection}
 
 \paragraph{1. Pair-wise comparison of criteria}
 The scale developed by Saaty was adopted to assess the relative importance of one criteria compared to another \cite{saaty_analytic_1987}. The fundamental scale is as follows: 1 for equal importance, 3 for moderate importance of one criteria over the other, 5 for essential or strong importance, 7 for very strong importance and 9 for extreme importance. Even numbers can be used as intermediate values. The normalised weightings were then calculated. The results for product selection are shown in \Cref{tab:pairwise}. Environmental and safety considerations were valued as more important than other criteria, in line with Nitroma's commitment to develop an inherently safer process. Process complexity was given the lowest weighting since each route exhibited similar complexities to achieve a multipurpose plant.  
@@ -40,7 +40,7 @@ The score for a given alternative is calculated by summing, over all criteria, t
     S=\sum^{i}_{n}(\tilde{p}_{in} \cdot w_{i})
 \end{equation}
 
-\paragraph{4. Weighted Normalised Matrix for TOPSIS}
+\paragraph{4. Weighted normalised matrix for TOPSIS}
 Similarly to AHP analysis, a $n\times k$ matrix is constructed for $n$ criteria and $k$ alternatives. The criteria $X_{ij}$ are normalised and multiplied by their respective weighting $w_i$ as follows:
 \begin{align}
     \tilde{X}_{ij}&=\frac{X_{ij}}{\sqrt{\sum^{n}_{i=1}X_{ij}^{2}}} &
@@ -54,7 +54,7 @@ The ideal best ($V_{j}^{+}$) and ideal worst ($V_{j}^{-}$) are the maximum and m
     S_{i}^{-}&=\sqrt{\sum_{j=1}^{n}(V_{ij}-V_{j}^{-})^2}
 \end{align}
 
-\paragraph{6. Evaluation of Performance Score and ranking}
+\paragraph{6. Evaluation of performance score and ranking}
 Finally the performance score is the ratio between the Euclidian distance from the ideal worst and the sum of Euclidian distances. The highest score indicates the most optimum solution.
 \begin{equation}
     P_{i}=\frac{S_{i}^{-}}{S_{i}^{+}+S_{i}^{-}}
@@ -63,7 +63,7 @@ Finally the performance score is the ratio between the Euclidian distance from t
 
 % \begin{landscape}
 
-\subsection{Nitration Catalyst Selection}
+\subsection{Nitration catalyst selection}
 \begin{table}[H]
 \centering
     \caption{AHP/TOPSIS results for Nitration Catalyst Selection}
@@ -101,7 +101,7 @@ Hexane     & 60           & 66.21 & 1.29      &   1.981    & 2            & 4 & 
 \end{tabularx}
 \end{table}
 
-\subsection{Plant Location}
+\subsection{Plant location}
 
 
 \begin{table}[H]

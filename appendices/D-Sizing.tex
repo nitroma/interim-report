@@ -24,25 +24,40 @@ Summary of the key assumptions involved in sizing the separator units and their 
 \centering\small
     \caption{Key assumptions involved in sizing of separator units and their sources of reference}
     \label{tab:assumptions of sizing separator units}\footnotesize
-\begin{tabularx}{\linewidth}{llXl}
-\toprule
-Tag  & Type                 & Assumptions used in sizing                                                                                                                                      & Source                                             \\ \midrule
-S101 & Decanter             & Organic phase is continuous; aqueous phase is dispersed                                                                                                         & \cite{ludwig_applied_1994}                         \\
-S102 & Distillation column  & Diameter of plate column estimated using methodology proposed in Seider et al. 2009; height to diameter ratio designed to be 25 in accordance with Douglas 1988 & \cite{seider_product_2009,douglas_conceptual_1988} \\
-S103 & Distillation column  & Diameter of plate column estimated using methodology proposed in Seider et al. 2009; height to diameter ratio designed to be 25 in accordance with Douglas 1988 & \cite{seider_product_2009,douglas_conceptual_1988} \\
-S201 & Distillation column  & Diameter of plate column estimated using methodology proposed in Seider et al. 2009; height to diameter ratio designed to be 25 in accordance with Douglas 1988 & \cite{seider_product_2009,douglas_conceptual_1988} \\
-S202 & Crystalliser         & No wetting (pure solid crystals); scaling by solid production rate from past example (Sulzer falling-film melt crystalliser)                                    & \cite{seader_separation_2011}                      \\
-S301 & Flash drum           & Minimum residence time of liquid phase is \SI{5}{\minute}; vessel half-filled with liquid                                                                                 & \cite{seader_separation_2011}                      \\
-S302 & Distillation column  & Diameter of plate column estimated using methodology proposed in Seider et al. 2009; height to diameter ratio designed to be 25 in accordance with Douglas 1988 & \cite{seider_product_2009,douglas_conceptual_1988} \\
-S303 & Distillation column  & Diameter of plate column estimated using methodology proposed in Seider et al. 2009; height to diameter ratio designed to be 25 in accordance with Douglas 1988 & \cite{seider_product_2009,douglas_conceptual_1988} \\
-S401 & Crystalliser         & No wetting (pure solid crystals); scaling by solid production rate from past example (Sulzer falling-film melt crystalliser)                                    & \cite{seader_separation_2011}                      \\
-S501 & Flash drum           & Minimum residence time of liquid phase is \SI{5}{\minute}; vessel half-filled with liquid                                                                                 & \cite{seader_separation_2011}                      \\
-S502 & Distillation column  & Diameter of plate column estimated using methodology proposed in Seider et al. 2009; height to diameter ratio designed to be 25 in accordance with Douglas 1988 & \cite{seider_product_2009,douglas_conceptual_1988} \\
-S503 & Distillation column  & Diameter of plate column estimated using methodology proposed in Seider et al. 2009; height to diameter ratio designed to be 25 in accordance with Douglas 1988 & \cite{seider_product_2009,douglas_conceptual_1988} \\
-S601 & Distillation  column & Diameter of plate column estimated using methodology proposed in Seider et al. 2009; height to diameter ratio designed to be 25 in accordance with Douglas 1988 & \cite{seider_product_2009,douglas_conceptual_1988} \\
-S602 & Distillation  column & Diameter of plate column estimated using methodology proposed in Seider et al. 2009; height to diameter ratio designed to be 25 in accordance with Douglas 1988 & \cite{seider_product_2009,douglas_conceptual_1988} \\ \bottomrule
-\end{tabularx}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{llll}
+\begin{tabular}[c]{@{}l@{}}Type of \\ separator\end{tabular} & Tags                                                                                                       & \begin{tabular}[c]{@{}l@{}}Sizing assumptions \\ and methodology\end{tabular}                                                                                                                                                                                                                                                                       & Source                                                                                               \\
+Decanter                                                     & S101                                                                                                       & Organic phase   is continuous; aqueous phase is dispersed                                                                                                                                                                                                                                                                                           & \textbackslash{}cite\{ludwig\_applied\_1994\}                                                        \\
+Distillation   column                                        & \begin{tabular}[c]{@{}l@{}}S102, S103,\\ S201, S302,\\ S303, S501,\\ S502, S503,\\ S601, S601\end{tabular} & \begin{tabular}[c]{@{}l@{}}Diameter of   plate column estimated using methodology proposed\\ in \textbackslash{}textcite\{seider\_product\_2009\} and \textbackslash{}textcite\{seader\_separation\_2011\};\\ height to diameter ratio designed to   be 25 in accordance with\\ \textbackslash{}textcite\{ douglas\_conceptual\_1988\}\end{tabular} & \textbackslash{}cite\{seider\_product\_2009,   seader\_separation\_2011, douglas\_conceptual\_1988\} \\
+Crystalliser                                                 & S202, S401                                                                                                 & \begin{tabular}[c]{@{}l@{}}No wetting   (pure solid crystals); scaling by solid production rate from\\ past example (Sulzerfalling-film melt crystalliser)\end{tabular}                                                                                                                                                                             & \textbackslash{}cite\{seader\_separation\_2011\}                                                     \\
+Flash drum                                                   & S301, S501                                                                                                 & \begin{tabular}[c]{@{}l@{}}Minimum   residence time of liquid phase is 5min;\\ vessel half-filled with liquid\end{tabular}                                                                                                                                                                                                                          & \textbackslash{}cite\{seader\_separation\_2011\}                                                    
+\end{tabular}%
+}
 \end{table}
+
+% \begin{table}[h]
+% \centering\small
+%     \caption{Key assumptions involved in sizing of separator units and their sources of reference}
+%     \label{tab:assumptions of sizing separator units}\footnotesize
+% \begin{tabularx}{\linewidth}{llXl}
+% \toprule
+% Tag  & Type                 & Assumptions used in sizing                                                                                                                                      & Source                                             \\ \midrule
+% S101 & Decanter             & Organic phase is continuous; aqueous phase is dispersed                                                                                                         & \cite{ludwig_applied_1994}                         \\
+% S102 & Distillation column  & Diameter of plate column estimated using methodology proposed in Seider et al. 2009; height to diameter ratio designed to be 25 in accordance with Douglas 1988 & \cite{seider_product_2009,douglas_conceptual_1988} \\
+% S103 & Distillation column  & Diameter of plate column estimated using methodology proposed in Seider et al. 2009; height to diameter ratio designed to be 25 in accordance with Douglas 1988 & \cite{seider_product_2009,douglas_conceptual_1988} \\
+% S201 & Distillation column  & Diameter of plate column estimated using methodology proposed in Seider et al. 2009; height to diameter ratio designed to be 25 in accordance with Douglas 1988 & \cite{seider_product_2009,douglas_conceptual_1988} \\
+% S202 & Crystalliser         & No wetting (pure solid crystals); scaling by solid production rate from past example (Sulzer falling-film melt crystalliser)                                    & \cite{seader_separation_2011}                      \\
+% S301 & Flash drum           & Minimum residence time of liquid phase is \SI{5}{\minute}; vessel half-filled with liquid                                                                                 & \cite{seader_separation_2011}                      \\
+% S302 & Distillation column  & Diameter of plate column estimated using methodology proposed in Seider et al. 2009; height to diameter ratio designed to be 25 in accordance with Douglas 1988 & \cite{seider_product_2009,douglas_conceptual_1988} \\
+% S303 & Distillation column  & Diameter of plate column estimated using methodology proposed in Seider et al. 2009; height to diameter ratio designed to be 25 in accordance with Douglas 1988 & \cite{seider_product_2009,douglas_conceptual_1988} \\
+% S401 & Crystalliser         & No wetting (pure solid crystals); scaling by solid production rate from past example (Sulzer falling-film melt crystalliser)                                    & \cite{seader_separation_2011}                      \\
+% S501 & Flash drum           & Minimum residence time of liquid phase is \SI{5}{\minute}; vessel half-filled with liquid                                                                                 & \cite{seader_separation_2011}                      \\
+% S502 & Distillation column  & Diameter of plate column estimated using methodology proposed in Seider et al. 2009; height to diameter ratio designed to be 25 in accordance with Douglas 1988 & \cite{seider_product_2009,douglas_conceptual_1988} \\
+% S503 & Distillation column  & Diameter of plate column estimated using methodology proposed in Seider et al. 2009; height to diameter ratio designed to be 25 in accordance with Douglas 1988 & \cite{seider_product_2009,douglas_conceptual_1988} \\
+% S601 & Distillation  column & Diameter of plate column estimated using methodology proposed in Seider et al. 2009; height to diameter ratio designed to be 25 in accordance with Douglas 1988 & \cite{seider_product_2009,douglas_conceptual_1988} \\
+% S602 & Distillation  column & Diameter of plate column estimated using methodology proposed in Seider et al. 2009; height to diameter ratio designed to be 25 in accordance with Douglas 1988 & \cite{seider_product_2009,douglas_conceptual_1988} \\ \bottomrule
+% \end{tabularx}
+% \end{table}
 
 \noindent Detailed methodologies for the sizing are as following:
 

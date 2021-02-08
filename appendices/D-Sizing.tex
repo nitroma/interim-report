@@ -9,7 +9,7 @@ All the reactors used in Nitroma's plant are assumed to have the same design equ
     V_R = \int_{F_{A0}}^{F_{A}} \frac{\dd F_A}{-r_A} = \int_{F_{A0}}^{F_{A}} \frac{\dd F_A}{-kC_A}
     \label{reactor_sizing}
 \end{equation}
-The plug flow behaviour is a common assumption for packed-bed reactors, ignoring axial and radial dispersion \cite{froment_chemical_nodate}. Similarly, studies have shown that  trickle bed reactor also behaves as an ideal plug flow reactor with no interphase and intraparticle gradients \cite{p_a_ramachandran_recent_1987} 
+The plug flow behaviour is a common assumption for packed-bed reactors, ignoring axial and radial dispersion \cite{froment_chemical_nodate}. Similarly, studies have shown that  trickle bed reactor also behaves as an ideal plug flow reactor with no interphase and intraparticle gradients \cite{p_a_ramachandran_recent_1987}.
 
 \paragraph{Key assumptions}
 \begin{enumerate}
@@ -62,13 +62,13 @@ Column heights were calculated by using a general rule quoted in \textcite{dougl
 \paragraph{Crystallisers}
 The crystallisers in this design have been sized by scaling against a past example of falling-film melt crystalliser develped by Sulzer Brothers Ltd. According to \textcite{seader_separation_2011} this equipment produces high-purity crystals at a capacity of \SI{100000}{\tonne\per\year}; it consists of a pair of units \SI{4}{\m} in diameter and \SI{12}{\m} in height. By assuming in this design that the solid crystals are pure and no wetting occurs, we scaled the crystalliser by its solid production rate as shown in Equation \ref{crystalliser_sizing} below:
 \begin{equation}
-    V = \frac{S}{\SI{10000}{\tonne\per\year}} \times 2~((4/2~m)^2 \pi \times 12~m)
+    V = \frac{S}{\SI{10000}{\tonne\per\year}} \times 2~((\frac{4}{2}~m)^2 \pi \times 12~m)
     \label{crystalliser_sizing}
 \end{equation}
 where $V$ is the volume of the crystalliser and $S$ is the solid production rate in \si{\tonne\per\year}.
 
 \paragraph{Flash drums}
-According to Seader et al. 2011, \cite{seader_separation_2011} the minimum volume of a vertical reflux/flash drum is to be determined on the basis of liquid residence time; the liquid residence time should be at least \SI{5}{\minute} and half of the vessel is assumed to be filled with liquid. Thus, Equation \ref{flash_sizing} below can be used to estimate the volume of the flash drum:
+According to \textcite{seader_separation_2011} the minimum volume of a vertical reflux/flash drum is to be determined on the basis of liquid residence time; the liquid residence time should be at least \SI{5}{\minute} and half of the vessel is assumed to be filled with liquid. Thus, Equation \ref{flash_sizing} below can be used to estimate the volume of the flash drum:
 \begin{equation}
     V = \frac{2 L M_L t}{\rho_{L}}
     \label{flash_sizing}

@@ -68,19 +68,19 @@ In the ABA scenario, the liquid effluent from reactor R401 is sent to a continuo
 \centering
     \caption{Sizing, temperatures, heat duties, and pressures of major equipment}
     \label{tab:equipment sizing}\footnotesize
-\resizebox{\textwidth}{!}{%
-\begin{tabular}{@{}cllccccccc@{}}
+% \resizebox{\textwidth}{!}{%
+\begin{tabular}{cllccccccc}
 \toprule
-\textbf{Tag}          & \multicolumn{2}{l}{\textbf{Process Unit}}          & \multicolumn{2}{c}{\textbf{Temperature (°C)}} & \textbf{Pressure (atm)} & \multicolumn{2}{c}{\textbf{Heat Duty (kW)}} & \multicolumn{2}{c}{\textbf{Size (m$^3$)}}  \\ \cmidrule(lr){4-5} \cmidrule(l){7-8} \cmidrule(l){9-10} 
+\textbf{Tag}          & \multicolumn{2}{l}{\textbf{Process Unit}}          & \multicolumn{2}{c}{\textbf{Temperature (°C)}} & \textbf{Pressure (atm)} & \multicolumn{2}{c}{\textbf{Heat Duty (kW)}} & \multicolumn{2}{c}{\textbf{Size (\si{\cubic\m})}}  \\ \cmidrule(lr){4-5} \cmidrule(l){7-8} \cmidrule(l){9-10} 
                       &                                    &               & BA                    & BH                    &                         & BA                   & BH                   & BA                           & BH          \\ \midrule
-\multicolumn{10}{c}{\textbf{Reactors}}                                                                                                                                                                                                          \\
+\multicolumn{10}{l}{\textbf{Reactors}}                                                                                                                                                                                                          \\
 R101                  & \multicolumn{2}{l}{Packed-bed microreactor}        & \multicolumn{2}{c}{60.00}                     & 1.00                    & \multicolumn{2}{c}{-65.01}                  & \multicolumn{2}{c}{0.21}                   \\
 R201                  & \multicolumn{2}{l}{Co-current trickle bed reactor} & \multicolumn{2}{c}{60.00}                     & 13.62                   & \multicolumn{2}{c}{-122.04}                 & \multicolumn{2}{c}{3.93}                   \\
 R301                  & \multicolumn{2}{l}{Packed-bed microreactor}        & \multicolumn{2}{c}{477.00}                    & 0.50                    & \multicolumn{2}{c}{-58.19}                  & -                            & 0.05        \\
 R302                  & \multicolumn{2}{l}{Packed-bed reactor}             & \multicolumn{2}{c}{210.00}                    & 0.50                    & \multicolumn{2}{c}{-23.28}                  & 169.65                       & -           \\
 R401                  & \multicolumn{2}{l}{Packed-bed microreactor}        & \multicolumn{2}{c}{25.00}                     & 1.00                    & \multicolumn{2}{c}{-}                       & 0.09                         & 0.20        \\
 R501                  & \multicolumn{2}{l}{Packed-bed microreactor}        & \multicolumn{2}{c}{25.00}                     & 1.00                    & \multicolumn{2}{c}{-}                       & -                            & 0.59        \\ \cmidrule{1-10}
-\multicolumn{10}{c}{\textbf{Separators}}                                                                                                                                                                                                        \\
+\multicolumn{10}{l}{\textbf{Separators}}                                                                                                                                                                                                        \\
 S101                  & \multicolumn{2}{l}{Decanter}                       & \multicolumn{2}{c}{59.85}                     & 1.00                    & \multicolumn{2}{c}{0.260}                   & \multicolumn{2}{c}{0.416}                  \\
 \multirow{2}{*}{S102} & \multirow{2}{*}{Distillation}      & Condenser     & \multicolumn{2}{c}{84.44}                     & 1.00                    & \multicolumn{2}{c}{-102.045}                & \multicolumn{2}{c}{\multirow{2}{*}{0.119}} \\
                       &                                    & Reboiler      & \multicolumn{2}{c}{97.70}                     & 1.00                    & \multicolumn{2}{c}{109.400}                 & \multicolumn{2}{c}{}         \\
@@ -104,18 +104,18 @@ S501                  & \multicolumn{2}{l}{Flash}                          & -  
                       &                                    & Reboiler      & \multicolumn{2}{c}{201.28}                    & 1.00                    & \multicolumn{2}{c}{127.955}                 & \multicolumn{2}{c}{}         \\
 \multirow{2}{*}{S603} & \multirow{2}{*}{Distillation}      & Condenser     & \multicolumn{2}{c}{198.82}                    & 1.00                    & \multicolumn{2}{c}{-24.667}                 & \multicolumn{2}{c}{\multirow{2}{*}{0.052}} \\
                       &                                    & Reboiler      & \multicolumn{2}{c}{216.31}                    & 1.00                    & \multicolumn{2}{c}{24.702}                  & \multicolumn{2}{c}{}         \\ \cmidrule{1-10}
-\multicolumn{10}{c}{\textbf{Heat Exchangers}}                                                                                                                                                                                                   \\
+\multicolumn{10}{l}{\textbf{Heat Exchangers}}                                                                                                                                                                                                   \\
 H101                  & \multicolumn{2}{l}{Heater}                         & \multicolumn{2}{c}{59.85}                     & 1.00                    & \multicolumn{2}{c}{6.38}                    & \multicolumn{2}{c}{-}                      \\
 H201                  & \multicolumn{2}{l}{Heater}                         & \multicolumn{2}{c}{59.85}                     & 1.00                    & \multicolumn{2}{c}{0.13}                    & \multicolumn{2}{c}{-}                      \\
 H202                  & \multicolumn{2}{l}{Cooler}                         & \multicolumn{2}{c}{59.85}                     & 1.00                    & \multicolumn{2}{c}{-8.12}                   & \multicolumn{2}{c}{-}                      \\
 H302                  & \multicolumn{2}{l}{Heater}                         & 209.85                & 476.85                & 1.00                    & 15.80                & 27.01                & \multicolumn{2}{c}{-}                      \\
 H303                  & \multicolumn{2}{l}{Heater}                         & 209.84                & 476.85                & 1.00                    & 13.41                & 30.14                & \multicolumn{2}{c}{-}                      \\
 H304                  & \multicolumn{2}{l}{Heater}                         & -                     & 24.85                 & 1.00                    & -                    & -9.09                & \multicolumn{2}{c}{-}                      \\
-H305                  & \multicolumn{2}{l}{Cooler}                         & \multicolumn{2}{c}{24.85}                     & 1.00                    & -3.09                & -2.18                & \multicolumn{2}{§c}{-}                      \\ \cmidrule{1-10}
-\multicolumn{10}{c}{\textbf{Furnaces}}                                                                                                                                                                                                          \\
+H305                  & \multicolumn{2}{l}{Cooler}                         & \multicolumn{2}{c}{24.85}                     & 1.00                    & -3.09                & -2.18                & \multicolumn{2}{c}{-}                      \\ \cmidrule{1-10}
+\multicolumn{10}{l}{\textbf{Furnaces}}                                                                                                                                                                                                          \\
 H301                  & \multicolumn{2}{l}{Furnace}                        & \multicolumn{2}{c}{70.00}                     & 1.00                    & \multicolumn{2}{c}{0.60}                    & \multicolumn{2}{c}{-}                      \\ \bottomrule
 \end{tabular}%
-}
+% }
 \end{table}
 
 \subsection{Process Alternatives}
